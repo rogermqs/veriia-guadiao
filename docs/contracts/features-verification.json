@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-09-13T20:18:21.494727+00:00",
+  "origin": "https://veriia.com.br",
+  "revision": "20260913-6",
+  "application_containers": 1,
+  "postgres": "existing PostgreSQL 16 reused",
+  "health": {
+    "citizens": 24,
+    "units": 3,
+    "agents": 6,
+    "encounters": 48,
+    "prescriptions": 24,
+    "visits": 48,
+    "origin": "synthetic_demo"
+  },
+  "validation": {
+    "sqlite_tests": 17,
+    "postgres_tests": 7,
+    "browser_tests_against_production": 3,
+    "live_health_ai_answers_with_sources": 3,
+    "live_regression_ai_answers_with_sources": 2,
+    "static_build": "passed",
+    "voice_real_microphone": "requires user browser/microphone test; automated tests use simulated speech APIs",
+    "circleci_config": "validated with official CLI",
+    "circleci_account_pipeline": "pending repository connection and contexts"
+  },
+  "image": "guardiao:20260913-6"
+}

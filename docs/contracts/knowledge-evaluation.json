@@ -1,0 +1,129 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimension": 384,
+  "mode": "hybrid",
+  "passed": 10,
+  "total": 10,
+  "accepted": true,
+  "rows": [
+    {
+      "query": "Qual é o novo prazo da vistoria do bairro Norte?",
+      "expected_prefix": "Ata 02",
+      "top5": [
+        "Ata 02 · Revisão do prazo de vistoria no Norte",
+        "Ata 11 · Qualidade dos registros",
+        "Ata 09 · Planejamento de equipamentos",
+        "Ata 07 · Poda no Jardim das Flores",
+        "Ata 06 · Coleta de resíduos no Oeste"
+      ],
+      "passed": true,
+      "elapsed_ms": 7035
+    },
+    {
+      "query": "Por que o prazo da vistoria no Norte foi alterado?",
+      "expected_prefix": "Ata 02",
+      "top5": [
+        "Ata 02 · Revisão do prazo de vistoria no Norte",
+        "Ata 01 · Vistoria de limpeza no bairro Norte",
+        "Ata 09 · Planejamento de equipamentos",
+        "Ata 07 · Poda no Jardim das Flores"
+      ],
+      "passed": true,
+      "elapsed_ms": 102
+    },
+    {
+      "query": "Qual era a proposta inicial para vistoriar a limpeza no Norte?",
+      "expected_prefix": "Ata 01",
+      "top5": [
+        "Ata 01 · Vistoria de limpeza no bairro Norte",
+        "Ata 11 · Qualidade dos registros",
+        "Ata 02 · Revisão do prazo de vistoria no Norte"
+      ],
+      "passed": true,
+      "elapsed_ms": 122
+    },
+    {
+      "query": "O que foi discutido sobre conservação de vias no Sul?",
+      "expected_prefix": "Ata 03",
+      "top5": [
+        "Ata 03 · Conservação de vias no bairro Sul",
+        "Ata 02 · Revisão do prazo de vistoria no Norte",
+        "Ata 01 · Vistoria de limpeza no bairro Norte",
+        "Ata 04 · Iluminação no Centro",
+        "Ata 05 · Manutenção de praças no Leste"
+      ],
+      "passed": true,
+      "elapsed_ms": 146
+    },
+    {
+      "query": "Há registros de reunião sobre iluminação do Centro?",
+      "expected_prefix": "Ata 04",
+      "top5": [
+        "Ata 04 · Iluminação no Centro",
+        "Ata 11 · Qualidade dos registros",
+        "Ata 12 · Pauta intersecretarial"
+      ],
+      "passed": true,
+      "elapsed_ms": 72
+    },
+    {
+      "query": "O que foi discutido sobre as praças do Leste?",
+      "expected_prefix": "Ata 05",
+      "top5": [
+        "Ata 05 · Manutenção de praças no Leste",
+        "Ata 02 · Revisão do prazo de vistoria no Norte",
+        "Ata 01 · Vistoria de limpeza no bairro Norte",
+        "Ata 12 · Pauta intersecretarial"
+      ],
+      "passed": true,
+      "elapsed_ms": 92
+    },
+    {
+      "query": "Onde está a ata sobre coleta de resíduos no Oeste?",
+      "expected_prefix": "Ata 06",
+      "top5": [
+        "Ata 06 · Coleta de resíduos no Oeste",
+        "Ata 12 · Pauta intersecretarial",
+        "Ata 04 · Iluminação no Centro",
+        "Ata 08 · Triagem de demandas"
+      ],
+      "passed": true,
+      "elapsed_ms": 89
+    },
+    {
+      "query": "O que foi discutido sobre poda no Jardim das Flores?",
+      "expected_prefix": "Ata 07",
+      "top5": [
+        "Ata 07 · Poda no Jardim das Flores"
+      ],
+      "passed": true,
+      "elapsed_ms": 42
+    },
+    {
+      "query": "Qual documento trata da triagem de demandas?",
+      "expected_prefix": "Ata 08",
+      "top5": [
+        "Ata 08 · Triagem de demandas",
+        "Ata 11 · Qualidade dos registros",
+        "Ata 09 · Planejamento de equipamentos",
+        "Ata 07 · Poda no Jardim das Flores",
+        "Ata 06 · Coleta de resíduos no Oeste"
+      ],
+      "passed": true,
+      "elapsed_ms": 101
+    },
+    {
+      "query": "Que ata trata do planejamento de equipamentos?",
+      "expected_prefix": "Ata 09",
+      "top5": [
+        "Ata 09 · Planejamento de equipamentos",
+        "Ata 02 · Revisão do prazo de vistoria no Norte",
+        "Ata 12 · Pauta intersecretarial",
+        "Ata 08 · Triagem de demandas",
+        "Ata 10 · Rotina de acompanhamento"
+      ],
+      "passed": true,
+      "elapsed_ms": 122
+    }
+  ]
+}

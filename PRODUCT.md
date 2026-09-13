@@ -1,0 +1,5 @@
+# Guardião, por Veriia
+register: product
+Gestores, secretários e analistas usam o Guardião durante o expediente, em ambientes iluminados, para consultar demandas e preparar reuniões. A interface deve facilitar a leitura de tabelas e a verificação de fontes. O logo do Guardião é a identidade do acesso e da navegação, com assinatura Segundo Cérebro, com azul profundo e dourado discreto. O conteúdo principal usa superfície clara, texto escuro e verde moderado para estados. Dados fictícios têm identificação permanente. Não utilizar brasões reais, métricas inventadas, mapas decorativos nem respostas simuladas de IA.
+
+A referência a Segundo Cérebro deve permanecer visível na consulta de IA. Um cérebro neural grande pulsa durante o processamento real e retorna ao repouso quando a resposta termina ou falha. A landing apresenta apenas Guardião, com seis áreas conectadas ao cérebro: demandas, decisões, compromissos, documentos, indicadores e memória institucional. Movimento reduzido conserva as conexões iluminadas sem animação.

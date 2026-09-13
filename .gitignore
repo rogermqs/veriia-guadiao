@@ -1,0 +1,31 @@
+node_modules/
+.next/
+dist/
+data/
+.env
+.env.local
+.venv/
+playwright-report/
+test-results/
+*.tsbuildinfo
+coverage/
+tmp/
+*.log
+*.log.*
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.swp
+*~
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Local package manager cache
+.pnpm-store/
+
+apps/web/out/
+.env.*
+!.env.example

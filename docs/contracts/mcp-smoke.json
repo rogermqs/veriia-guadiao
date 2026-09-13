@@ -1,0 +1,350 @@
+{
+  "project": {
+    "projects": [
+      {
+        "name": "agm-curitiba-public",
+        "external_id": "d2254df5-59ce-42b1-bc65-78a885be21a5",
+        "path": "/Users/rogermarques/Documents/workspace/veriia/data/vaults/real",
+        "local_path": "/Users/rogermarques/Documents/workspace/veriia/data/vaults/real",
+        "cloud_path": null,
+        "source": "local",
+        "is_default": false,
+        "is_private": false,
+        "display_name": null,
+        "workspace_name": null,
+        "workspace_type": null,
+        "workspace_tenant_id": null,
+        "workspace_slug": null,
+        "workspace_is_default": false,
+        "sync_supported": true,
+        "sync_reason": null,
+        "local_usage": "sync-supported",
+        "qualified_name": null
+      },
+      {
+        "name": "agm-municipio-demo",
+        "external_id": "394f9d53-e463-4525-b214-896c4d9ca8f5",
+        "path": "/Users/rogermarques/Documents/workspace/veriia/data/vaults/demo",
+        "local_path": "/Users/rogermarques/Documents/workspace/veriia/data/vaults/demo",
+        "cloud_path": null,
+        "source": "local",
+        "is_default": true,
+        "is_private": false,
+        "display_name": null,
+        "workspace_name": null,
+        "workspace_type": null,
+        "workspace_tenant_id": null,
+        "workspace_slug": null,
+        "workspace_is_default": false,
+        "sync_supported": true,
+        "sync_reason": null,
+        "local_usage": "sync-supported",
+        "qualified_name": null
+      },
+      {
+        "name": "main",
+        "external_id": "673c904f-959d-402c-bd3c-273d5f6b0c1d",
+        "path": "/Users/rogermarques/Documents/workspace/veriia/data/vaults/main",
+        "local_path": "/Users/rogermarques/Documents/workspace/veriia/data/vaults/main",
+        "cloud_path": null,
+        "source": "local",
+        "is_default": false,
+        "is_private": false,
+        "display_name": null,
+        "workspace_name": null,
+        "workspace_type": null,
+        "workspace_tenant_id": null,
+        "workspace_slug": null,
+        "workspace_is_default": false,
+        "sync_supported": true,
+        "sync_reason": null,
+        "local_usage": "sync-supported",
+        "qualified_name": null
+      }
+    ],
+    "default_project": "agm-municipio-demo",
+    "constrained_project": "agm-municipio-demo"
+  },
+  "receipt": {
+    "title": "agm-smoke-v1",
+    "permalink": "agm-municipio-demo/smoke/agm-smoke-v1",
+    "file_path": "smoke/agm-smoke-v1.md",
+    "checksum": null,
+    "action": "updated"
+  },
+  "read": "---\ntitle: agm-smoke-v1\ntype: note\npermalink: agm-municipio-demo/smoke/agm-smoke-v1\n---\n\n# Verificação de integração\n\nSIMULAÇÃO. A vistoria de limpeza do bairro Norte está prevista para 18 de setembro de 2026.",
+  "search": {
+    "results": [
+      {
+        "title": "agm-587f5fde-eec9-4f70-912d-36b269498a99-v2",
+        "type": "entity",
+        "score": -2.2925651572553805,
+        "entity": "agm-municipio-demo/managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2",
+        "external_id": "c5dfd7bd-81e1-4ef6-b499-c07e0be880cf",
+        "permalink": "agm-municipio-demo/managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2",
+        "content": "# Realizar vistoria no bairro Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"587f5fde-eec9-4f70-912d-36b269498a99\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"decisions\",\n  \"version\": 2,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.646Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Realizar vistoria no bairro Norte\",\n  \"statement\": \"Realizar vistoria no bairro Norte\",\n  \"rationale\": \"Encaminhamento da reunião fictícia de acompanhamento.\",\n  \"department\": \"Secretaria de Zeladoria\",\n  \"decided_on\": \"2026-09-01\",\n  \"status\": \"superseded\"\n}\n\n<!-- AGM_PROJECTION:587f5fde-eec9-4f70-912d-36b269498a99:2:9b2a1ae87f3f44f312d73ae7e8ae7ab2019d5780e4b9905c13f61811ee78b40e -->",
+        "file_path": "managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2.md",
+        "updated_at": "2026-09-13T14:27:43.026387-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 14
+      },
+      {
+        "title": "agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1",
+        "type": "entity",
+        "score": -2.2213513552503596,
+        "entity": "agm-municipio-demo/managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1",
+        "external_id": "6f790c32-9ae4-479f-8237-9aea6afacb1e",
+        "permalink": "agm-municipio-demo/managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1",
+        "content": "# Revisar prazo da vistoria do Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"7d68b2ed-6e0f-486d-b378-71f2176ad627\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"decisions\",\n  \"version\": 1,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.647Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Revisar prazo da vistoria do Norte\",\n  \"statement\": \"A vistoria do bairro Norte será apresentada até 18/09/2026.\",\n  \"rationale\": \"Necessidade de concluir o levantamento de equipamentos.\",\n  \"department\": \"Secretaria de Obras\",\n  \"decided_on\": \"2026-09-10\",\n  \"status\": \"active\",\n  \"supersedes_id\": \"587f5fde-eec9-4f70-912d-36b269498a99\"\n}\n\n<!-- AGM_PROJECTION:7d68b2ed-6e0f-486d-b378-71f2176ad627:1:84537b3f0ffe520196a0f4cc01340b04e661178e6aa80716f6e9a8fc7a3e50b8 -->",
+        "file_path": "managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1.md",
+        "updated_at": "2026-09-13T14:27:44.530748-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 15
+      },
+      {
+        "title": "agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1",
+        "type": "entity",
+        "score": -2.0891490935537385,
+        "entity": "agm-municipio-demo/managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1",
+        "external_id": "81d19c97-2f75-4c03-a3d5-a770fc0db828",
+        "permalink": "agm-municipio-demo/managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1",
+        "content": "# Vistoria de limpeza no bairro Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n## Contexto\n\nEm 01/09/2026, a equipe propôs realizar uma vistoria de limpeza no bairro Norte até 12/09/2026. Esta decisão inicial foi posteriormente substituída.\n\n## Encaminhamento\n\nConferir os registros e acompanhar os compromissos no sistema. Autoria: equipe fictícia da demonstração.\n\n<!-- AGM_PROJECTION:a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1:1:9e8358312eed45b20ff6cac26060e4ee3a2b357eedbd8b43af62e3bfdd2043bd -->",
+        "file_path": "managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1.md",
+        "updated_at": "2026-09-13T14:27:25.904864-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 2
+      },
+      {
+        "title": "agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1",
+        "type": "entity",
+        "score": -2.0173226031966767,
+        "entity": "agm-municipio-demo/managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1",
+        "external_id": "b812ff05-e91e-4b4f-add8-6fcf93da3d91",
+        "permalink": "agm-municipio-demo/managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1",
+        "content": "# Revisão do prazo de vistoria no Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n## Contexto\n\nEm 10/09/2026, a equipe revisou o prazo da vistoria do bairro Norte para 18/09/2026. A justificativa registrada foi a necessidade de concluir o levantamento de equipamentos. O prazo de 12/09 foi substituído.\n\n## Encaminhamento\n\nConferir os registros e acompanhar os compromissos no sistema. Autoria: equipe fictícia da demonstração.\n\n<!-- AGM_PROJECTION:b4f6c46b-2b49-4041-9da2-f13653c9fb47:1:833015e146be0da356ed1c5b02f2205cf0bbc648317a11e734c366cc9a882931 -->",
+        "file_path": "managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1.md",
+        "updated_at": "2026-09-13T14:27:26.501674-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 3
+      },
+      {
+        "title": "agm-smoke-v1",
+        "type": "entity",
+        "score": -1.9848330331939499,
+        "entity": "agm-municipio-demo/smoke/agm-smoke-v1",
+        "external_id": "0e844762-0d6e-4abd-940b-a6b3d735d1ea",
+        "permalink": "agm-municipio-demo/smoke/agm-smoke-v1",
+        "content": "# Verificação de integração\n\nSIMULAÇÃO. A vistoria de limpeza do bairro Norte está prevista para 18 de setembro de 2026.",
+        "file_path": "smoke/agm-smoke-v1.md",
+        "updated_at": "2026-09-13T14:08:45.872466-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 1
+      },
+      {
+        "title": "agm-6f14e893-dbde-429f-b9bb-013691856367-v1",
+        "type": "entity",
+        "score": -1.9755256599913307,
+        "entity": "agm-municipio-demo/managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1",
+        "external_id": "61047456-0c7a-4725-bd29-4619b3e635b8",
+        "permalink": "agm-municipio-demo/managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1",
+        "content": "# Concluir relatório de vistoria\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"6f14e893-dbde-429f-b9bb-013691856367\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"commitments\",\n  \"version\": 1,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.649Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Concluir relatório de vistoria\",\n  \"description\": \"Compromisso fictício para demonstração do acompanhamento.\",\n  \"department\": \"Secretaria de Zeladoria\",\n  \"owner_name\": \"Ana Costa (fictícia)\",\n  \"due_date\": \"2026-09-13\",\n  \"status\": \"completed\",\n  \"neighborhood\": \"Leste\",\n  \"decision_id\": \"7d68b2ed-6e0f-486d-b378-71f2176ad627\"\n}\n\n<!-- AGM_PROJECTION:6f14e893-dbde-429f-b9bb-013691856367:1:84561f712439334a241504e3563242e45b41d2e6f034ec028442a849f93c4ee2 -->",
+        "file_path": "managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1.md",
+        "updated_at": "2026-09-13T14:28:10.039447-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 31
+      },
+      {
+        "title": "agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1",
+        "type": "entity",
+        "score": -1.9704225075809656,
+        "entity": "agm-municipio-demo/managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1",
+        "external_id": "f40129cc-092a-421a-a800-4bdc1c9015eb",
+        "permalink": "agm-municipio-demo/managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1",
+        "content": "# Vistoriar pontos de iluminação\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"799d8158-3007-457b-9d55-e61f3e3ab8d9\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"commitments\",\n  \"version\": 1,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.648Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Vistoriar pontos de iluminação\",\n  \"description\": \"Compromisso fictício para demonstração do acompanhamento.\",\n  \"department\": \"Secretaria de Zeladoria\",\n  \"owner_name\": \"Ana Costa (fictícia)\",\n  \"due_date\": \"2026-09-30\",\n  \"status\": \"in_progress\",\n  \"neighborhood\": \"Leste\",\n  \"decision_id\": \"c3d4337e-4bdd-4258-9c82-cc1bfada0111\"\n}\n\n<!-- AGM_PROJECTION:799d8158-3007-457b-9d55-e61f3e3ab8d9:1:074fcade769dd494eb80ed437dd5e1a53ebd9ba2060f733902ba741410f65a85 -->",
+        "file_path": "managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1.md",
+        "updated_at": "2026-09-13T14:28:01.043181-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 25
+      },
+      {
+        "title": "agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2",
+        "type": "entity",
+        "score": -1.3422075093963761,
+        "entity": "agm-municipio-demo/managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2",
+        "external_id": "f03d89c2-9842-40a9-a125-bd5412616415",
+        "permalink": "agm-municipio-demo/managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2",
+        "content": "# Revisar drenagem no bairro Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"ff97e70d-2e3d-4569-b050-2ae1664316f0\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"commitments\",\n  \"version\": 2,\n  \"created_by\": \"2a5cda90-07c3-4512-9872-873de16eebd1\",\n  \"created_at\": \"2026-09-13T18:02:11.513Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Revisar drenagem no bairro Norte\",\n  \"description\": \"SIMULAÇÃO — Vistoriar bocas de lobo e organizar a limpeza preventiva antes do período de chuvas.\",\n  \"department\": \"Secretaria de Obras\",\n  \"owner_name\": \"Joana Ribeiro (fictícia)\",\n  \"due_date\": \"2026-09-11\",\n  \"status\": \"open\",\n  \"neighborhood\": \"Norte\",\n  \"source_refs\": [],\n  \"decision_id\": \"47538f53-81fb-4c43-be75-73daa87c5614\"\n}\n\n<!-- AGM_PROJECTION:ff97e70d-2e3d-4569-b050-2ae1664316f0:2:9032ea42d90dac47fc4f368441f2482ed4d51e3329f191bec149de27ec131c24 -->",
+        "file_path": "managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2.md",
+        "updated_at": "2026-09-13T15:13:24.267084-03:00",
+        "metadata": {
+          "note_type": "note"
+        },
+        "entity_id": 41
+      }
+    ],
+    "current_page": 1,
+    "page_size": 10,
+    "total": 8,
+    "total_is_exact": true,
+    "has_more": false
+  },
+  "cross": {
+    "_meta": {
+      "fastmcp": {
+        "wrap_result": true
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"results\":[{\"title\":\"agm-587f5fde-eec9-4f70-912d-36b269498a99-v2\",\"type\":\"entity\",\"score\":-2.2925651572553805,\"entity\":\"agm-municipio-demo/managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2\",\"external_id\":\"c5dfd7bd-81e1-4ef6-b499-c07e0be880cf\",\"permalink\":\"agm-municipio-demo/managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2\",\"content\":\"# Realizar vistoria no bairro Norte\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n{\\n  \\\"id\\\": \\\"587f5fde-eec9-4f70-912d-36b269498a99\\\",\\n  \\\"workspace_id\\\": \\\"demo\\\",\\n  \\\"kind\\\": \\\"decisions\\\",\\n  \\\"version\\\": 2,\\n  \\\"created_by\\\": \\\"seed\\\",\\n  \\\"created_at\\\": \\\"2026-09-13T17:06:45.646Z\\\",\\n  \\\"indexing_state\\\": \\\"pending\\\",\\n  \\\"title\\\": \\\"Realizar vistoria no bairro Norte\\\",\\n  \\\"statement\\\": \\\"Realizar vistoria no bairro Norte\\\",\\n  \\\"rationale\\\": \\\"Encaminhamento da reunião fictícia de acompanhamento.\\\",\\n  \\\"department\\\": \\\"Secretaria de Zeladoria\\\",\\n  \\\"decided_on\\\": \\\"2026-09-01\\\",\\n  \\\"status\\\": \\\"superseded\\\"\\n}\\n\\n<!-- AGM_PROJECTION:587f5fde-eec9-4f70-912d-36b269498a99:2:9b2a1ae87f3f44f312d73ae7e8ae7ab2019d5780e4b9905c13f61811ee78b40e -->\",\"file_path\":\"managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2.md\",\"updated_at\":\"2026-09-13T14:27:43.026387-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":14},{\"title\":\"agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1\",\"type\":\"entity\",\"score\":-2.2213513552503596,\"entity\":\"agm-municipio-demo/managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1\",\"external_id\":\"6f790c32-9ae4-479f-8237-9aea6afacb1e\",\"permalink\":\"agm-municipio-demo/managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1\",\"content\":\"# Revisar prazo da vistoria do Norte\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n{\\n  \\\"id\\\": \\\"7d68b2ed-6e0f-486d-b378-71f2176ad627\\\",\\n  \\\"workspace_id\\\": \\\"demo\\\",\\n  \\\"kind\\\": \\\"decisions\\\",\\n  \\\"version\\\": 1,\\n  \\\"created_by\\\": \\\"seed\\\",\\n  \\\"created_at\\\": \\\"2026-09-13T17:06:45.647Z\\\",\\n  \\\"indexing_state\\\": \\\"pending\\\",\\n  \\\"title\\\": \\\"Revisar prazo da vistoria do Norte\\\",\\n  \\\"statement\\\": \\\"A vistoria do bairro Norte será apresentada até 18/09/2026.\\\",\\n  \\\"rationale\\\": \\\"Necessidade de concluir o levantamento de equipamentos.\\\",\\n  \\\"department\\\": \\\"Secretaria de Obras\\\",\\n  \\\"decided_on\\\": \\\"2026-09-10\\\",\\n  \\\"status\\\": \\\"active\\\",\\n  \\\"supersedes_id\\\": \\\"587f5fde-eec9-4f70-912d-36b269498a99\\\"\\n}\\n\\n<!-- AGM_PROJECTION:7d68b2ed-6e0f-486d-b378-71f2176ad627:1:84537b3f0ffe520196a0f4cc01340b04e661178e6aa80716f6e9a8fc7a3e50b8 -->\",\"file_path\":\"managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1.md\",\"updated_at\":\"2026-09-13T14:27:44.530748-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":15},{\"title\":\"agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1\",\"type\":\"entity\",\"score\":-2.0891490935537385,\"entity\":\"agm-municipio-demo/managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1\",\"external_id\":\"81d19c97-2f75-4c03-a3d5-a770fc0db828\",\"permalink\":\"agm-municipio-demo/managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1\",\"content\":\"# Vistoria de limpeza no bairro Norte\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n## Contexto\\n\\nEm 01/09/2026, a equipe propôs realizar uma vistoria de limpeza no bairro Norte até 12/09/2026. Esta decisão inicial foi posteriormente substituída.\\n\\n## Encaminhamento\\n\\nConferir os registros e acompanhar os compromissos no sistema. Autoria: equipe fictícia da demonstração.\\n\\n<!-- AGM_PROJECTION:a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1:1:9e8358312eed45b20ff6cac26060e4ee3a2b357eedbd8b43af62e3bfdd2043bd -->\",\"file_path\":\"managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1.md\",\"updated_at\":\"2026-09-13T14:27:25.904864-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":2},{\"title\":\"agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1\",\"type\":\"entity\",\"score\":-2.0173226031966767,\"entity\":\"agm-municipio-demo/managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1\",\"external_id\":\"b812ff05-e91e-4b4f-add8-6fcf93da3d91\",\"permalink\":\"agm-municipio-demo/managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1\",\"content\":\"# Revisão do prazo de vistoria no Norte\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n## Contexto\\n\\nEm 10/09/2026, a equipe revisou o prazo da vistoria do bairro Norte para 18/09/2026. A justificativa registrada foi a necessidade de concluir o levantamento de equipamentos. O prazo de 12/09 foi substituído.\\n\\n## Encaminhamento\\n\\nConferir os registros e acompanhar os compromissos no sistema. Autoria: equipe fictícia da demonstração.\\n\\n<!-- AGM_PROJECTION:b4f6c46b-2b49-4041-9da2-f13653c9fb47:1:833015e146be0da356ed1c5b02f2205cf0bbc648317a11e734c366cc9a882931 -->\",\"file_path\":\"managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1.md\",\"updated_at\":\"2026-09-13T14:27:26.501674-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":3},{\"title\":\"agm-smoke-v1\",\"type\":\"entity\",\"score\":-1.9848330331939499,\"entity\":\"agm-municipio-demo/smoke/agm-smoke-v1\",\"external_id\":\"0e844762-0d6e-4abd-940b-a6b3d735d1ea\",\"permalink\":\"agm-municipio-demo/smoke/agm-smoke-v1\",\"content\":\"# Verificação de integração\\n\\nSIMULAÇÃO. A vistoria de limpeza do bairro Norte está prevista para 18 de setembro de 2026.\",\"file_path\":\"smoke/agm-smoke-v1.md\",\"updated_at\":\"2026-09-13T14:08:45.872466-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":1},{\"title\":\"agm-6f14e893-dbde-429f-b9bb-013691856367-v1\",\"type\":\"entity\",\"score\":-1.9755256599913307,\"entity\":\"agm-municipio-demo/managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1\",\"external_id\":\"61047456-0c7a-4725-bd29-4619b3e635b8\",\"permalink\":\"agm-municipio-demo/managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1\",\"content\":\"# Concluir relatório de vistoria\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n{\\n  \\\"id\\\": \\\"6f14e893-dbde-429f-b9bb-013691856367\\\",\\n  \\\"workspace_id\\\": \\\"demo\\\",\\n  \\\"kind\\\": \\\"commitments\\\",\\n  \\\"version\\\": 1,\\n  \\\"created_by\\\": \\\"seed\\\",\\n  \\\"created_at\\\": \\\"2026-09-13T17:06:45.649Z\\\",\\n  \\\"indexing_state\\\": \\\"pending\\\",\\n  \\\"title\\\": \\\"Concluir relatório de vistoria\\\",\\n  \\\"description\\\": \\\"Compromisso fictício para demonstração do acompanhamento.\\\",\\n  \\\"department\\\": \\\"Secretaria de Zeladoria\\\",\\n  \\\"owner_name\\\": \\\"Ana Costa (fictícia)\\\",\\n  \\\"due_date\\\": \\\"2026-09-13\\\",\\n  \\\"status\\\": \\\"completed\\\",\\n  \\\"neighborhood\\\": \\\"Leste\\\",\\n  \\\"decision_id\\\": \\\"7d68b2ed-6e0f-486d-b378-71f2176ad627\\\"\\n}\\n\\n<!-- AGM_PROJECTION:6f14e893-dbde-429f-b9bb-013691856367:1:84561f712439334a241504e3563242e45b41d2e6f034ec028442a849f93c4ee2 -->\",\"file_path\":\"managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1.md\",\"updated_at\":\"2026-09-13T14:28:10.039447-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":31},{\"title\":\"agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1\",\"type\":\"entity\",\"score\":-1.9704225075809656,\"entity\":\"agm-municipio-demo/managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1\",\"external_id\":\"f40129cc-092a-421a-a800-4bdc1c9015eb\",\"permalink\":\"agm-municipio-demo/managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1\",\"content\":\"# Vistoriar pontos de iluminação\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n{\\n  \\\"id\\\": \\\"799d8158-3007-457b-9d55-e61f3e3ab8d9\\\",\\n  \\\"workspace_id\\\": \\\"demo\\\",\\n  \\\"kind\\\": \\\"commitments\\\",\\n  \\\"version\\\": 1,\\n  \\\"created_by\\\": \\\"seed\\\",\\n  \\\"created_at\\\": \\\"2026-09-13T17:06:45.648Z\\\",\\n  \\\"indexing_state\\\": \\\"pending\\\",\\n  \\\"title\\\": \\\"Vistoriar pontos de iluminação\\\",\\n  \\\"description\\\": \\\"Compromisso fictício para demonstração do acompanhamento.\\\",\\n  \\\"department\\\": \\\"Secretaria de Zeladoria\\\",\\n  \\\"owner_name\\\": \\\"Ana Costa (fictícia)\\\",\\n  \\\"due_date\\\": \\\"2026-09-30\\\",\\n  \\\"status\\\": \\\"in_progress\\\",\\n  \\\"neighborhood\\\": \\\"Leste\\\",\\n  \\\"decision_id\\\": \\\"c3d4337e-4bdd-4258-9c82-cc1bfada0111\\\"\\n}\\n\\n<!-- AGM_PROJECTION:799d8158-3007-457b-9d55-e61f3e3ab8d9:1:074fcade769dd494eb80ed437dd5e1a53ebd9ba2060f733902ba741410f65a85 -->\",\"file_path\":\"managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1.md\",\"updated_at\":\"2026-09-13T14:28:01.043181-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":25},{\"title\":\"agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2\",\"type\":\"entity\",\"score\":-1.3422075093963761,\"entity\":\"agm-municipio-demo/managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2\",\"external_id\":\"f03d89c2-9842-40a9-a125-bd5412616415\",\"permalink\":\"agm-municipio-demo/managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2\",\"content\":\"# Revisar drenagem no bairro Norte\\n\\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\\n\\n{\\n  \\\"id\\\": \\\"ff97e70d-2e3d-4569-b050-2ae1664316f0\\\",\\n  \\\"workspace_id\\\": \\\"demo\\\",\\n  \\\"kind\\\": \\\"commitments\\\",\\n  \\\"version\\\": 2,\\n  \\\"created_by\\\": \\\"2a5cda90-07c3-4512-9872-873de16eebd1\\\",\\n  \\\"created_at\\\": \\\"2026-09-13T18:02:11.513Z\\\",\\n  \\\"indexing_state\\\": \\\"pending\\\",\\n  \\\"title\\\": \\\"Revisar drenagem no bairro Norte\\\",\\n  \\\"description\\\": \\\"SIMULAÇÃO — Vistoriar bocas de lobo e organizar a limpeza preventiva antes do período de chuvas.\\\",\\n  \\\"department\\\": \\\"Secretaria de Obras\\\",\\n  \\\"owner_name\\\": \\\"Joana Ribeiro (fictícia)\\\",\\n  \\\"due_date\\\": \\\"2026-09-11\\\",\\n  \\\"status\\\": \\\"open\\\",\\n  \\\"neighborhood\\\": \\\"Norte\\\",\\n  \\\"source_refs\\\": [],\\n  \\\"decision_id\\\": \\\"47538f53-81fb-4c43-be75-73daa87c5614\\\"\\n}\\n\\n<!-- AGM_PROJECTION:ff97e70d-2e3d-4569-b050-2ae1664316f0:2:9032ea42d90dac47fc4f368441f2482ed4d51e3329f191bec149de27ec131c24 -->\",\"file_path\":\"managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2.md\",\"updated_at\":\"2026-09-13T15:13:24.267084-03:00\",\"metadata\":{\"note_type\":\"note\"},\"entity_id\":41}],\"current_page\":1,\"page_size\":10,\"total\":8,\"total_is_exact\":true,\"has_more\":false}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "results": [
+          {
+            "title": "agm-587f5fde-eec9-4f70-912d-36b269498a99-v2",
+            "type": "entity",
+            "score": -2.2925651572553805,
+            "entity": "agm-municipio-demo/managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2",
+            "external_id": "c5dfd7bd-81e1-4ef6-b499-c07e0be880cf",
+            "permalink": "agm-municipio-demo/managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2",
+            "content": "# Realizar vistoria no bairro Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"587f5fde-eec9-4f70-912d-36b269498a99\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"decisions\",\n  \"version\": 2,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.646Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Realizar vistoria no bairro Norte\",\n  \"statement\": \"Realizar vistoria no bairro Norte\",\n  \"rationale\": \"Encaminhamento da reunião fictícia de acompanhamento.\",\n  \"department\": \"Secretaria de Zeladoria\",\n  \"decided_on\": \"2026-09-01\",\n  \"status\": \"superseded\"\n}\n\n<!-- AGM_PROJECTION:587f5fde-eec9-4f70-912d-36b269498a99:2:9b2a1ae87f3f44f312d73ae7e8ae7ab2019d5780e4b9905c13f61811ee78b40e -->",
+            "file_path": "managed/agm-587f5fde-eec9-4f70-912d-36b269498a99-v2.md",
+            "updated_at": "2026-09-13T14:27:43.026387-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 14
+          },
+          {
+            "title": "agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1",
+            "type": "entity",
+            "score": -2.2213513552503596,
+            "entity": "agm-municipio-demo/managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1",
+            "external_id": "6f790c32-9ae4-479f-8237-9aea6afacb1e",
+            "permalink": "agm-municipio-demo/managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1",
+            "content": "# Revisar prazo da vistoria do Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"7d68b2ed-6e0f-486d-b378-71f2176ad627\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"decisions\",\n  \"version\": 1,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.647Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Revisar prazo da vistoria do Norte\",\n  \"statement\": \"A vistoria do bairro Norte será apresentada até 18/09/2026.\",\n  \"rationale\": \"Necessidade de concluir o levantamento de equipamentos.\",\n  \"department\": \"Secretaria de Obras\",\n  \"decided_on\": \"2026-09-10\",\n  \"status\": \"active\",\n  \"supersedes_id\": \"587f5fde-eec9-4f70-912d-36b269498a99\"\n}\n\n<!-- AGM_PROJECTION:7d68b2ed-6e0f-486d-b378-71f2176ad627:1:84537b3f0ffe520196a0f4cc01340b04e661178e6aa80716f6e9a8fc7a3e50b8 -->",
+            "file_path": "managed/agm-7d68b2ed-6e0f-486d-b378-71f2176ad627-v1.md",
+            "updated_at": "2026-09-13T14:27:44.530748-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 15
+          },
+          {
+            "title": "agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1",
+            "type": "entity",
+            "score": -2.0891490935537385,
+            "entity": "agm-municipio-demo/managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1",
+            "external_id": "81d19c97-2f75-4c03-a3d5-a770fc0db828",
+            "permalink": "agm-municipio-demo/managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1",
+            "content": "# Vistoria de limpeza no bairro Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n## Contexto\n\nEm 01/09/2026, a equipe propôs realizar uma vistoria de limpeza no bairro Norte até 12/09/2026. Esta decisão inicial foi posteriormente substituída.\n\n## Encaminhamento\n\nConferir os registros e acompanhar os compromissos no sistema. Autoria: equipe fictícia da demonstração.\n\n<!-- AGM_PROJECTION:a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1:1:9e8358312eed45b20ff6cac26060e4ee3a2b357eedbd8b43af62e3bfdd2043bd -->",
+            "file_path": "managed/agm-a0968b1a-f6ef-4fd5-afcd-ee979bbfd6a1-v1.md",
+            "updated_at": "2026-09-13T14:27:25.904864-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 2
+          },
+          {
+            "title": "agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1",
+            "type": "entity",
+            "score": -2.0173226031966767,
+            "entity": "agm-municipio-demo/managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1",
+            "external_id": "b812ff05-e91e-4b4f-add8-6fcf93da3d91",
+            "permalink": "agm-municipio-demo/managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1",
+            "content": "# Revisão do prazo de vistoria no Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n## Contexto\n\nEm 10/09/2026, a equipe revisou o prazo da vistoria do bairro Norte para 18/09/2026. A justificativa registrada foi a necessidade de concluir o levantamento de equipamentos. O prazo de 12/09 foi substituído.\n\n## Encaminhamento\n\nConferir os registros e acompanhar os compromissos no sistema. Autoria: equipe fictícia da demonstração.\n\n<!-- AGM_PROJECTION:b4f6c46b-2b49-4041-9da2-f13653c9fb47:1:833015e146be0da356ed1c5b02f2205cf0bbc648317a11e734c366cc9a882931 -->",
+            "file_path": "managed/agm-b4f6c46b-2b49-4041-9da2-f13653c9fb47-v1.md",
+            "updated_at": "2026-09-13T14:27:26.501674-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 3
+          },
+          {
+            "title": "agm-smoke-v1",
+            "type": "entity",
+            "score": -1.9848330331939499,
+            "entity": "agm-municipio-demo/smoke/agm-smoke-v1",
+            "external_id": "0e844762-0d6e-4abd-940b-a6b3d735d1ea",
+            "permalink": "agm-municipio-demo/smoke/agm-smoke-v1",
+            "content": "# Verificação de integração\n\nSIMULAÇÃO. A vistoria de limpeza do bairro Norte está prevista para 18 de setembro de 2026.",
+            "file_path": "smoke/agm-smoke-v1.md",
+            "updated_at": "2026-09-13T14:08:45.872466-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 1
+          },
+          {
+            "title": "agm-6f14e893-dbde-429f-b9bb-013691856367-v1",
+            "type": "entity",
+            "score": -1.9755256599913307,
+            "entity": "agm-municipio-demo/managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1",
+            "external_id": "61047456-0c7a-4725-bd29-4619b3e635b8",
+            "permalink": "agm-municipio-demo/managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1",
+            "content": "# Concluir relatório de vistoria\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"6f14e893-dbde-429f-b9bb-013691856367\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"commitments\",\n  \"version\": 1,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.649Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Concluir relatório de vistoria\",\n  \"description\": \"Compromisso fictício para demonstração do acompanhamento.\",\n  \"department\": \"Secretaria de Zeladoria\",\n  \"owner_name\": \"Ana Costa (fictícia)\",\n  \"due_date\": \"2026-09-13\",\n  \"status\": \"completed\",\n  \"neighborhood\": \"Leste\",\n  \"decision_id\": \"7d68b2ed-6e0f-486d-b378-71f2176ad627\"\n}\n\n<!-- AGM_PROJECTION:6f14e893-dbde-429f-b9bb-013691856367:1:84561f712439334a241504e3563242e45b41d2e6f034ec028442a849f93c4ee2 -->",
+            "file_path": "managed/agm-6f14e893-dbde-429f-b9bb-013691856367-v1.md",
+            "updated_at": "2026-09-13T14:28:10.039447-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 31
+          },
+          {
+            "title": "agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1",
+            "type": "entity",
+            "score": -1.9704225075809656,
+            "entity": "agm-municipio-demo/managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1",
+            "external_id": "f40129cc-092a-421a-a800-4bdc1c9015eb",
+            "permalink": "agm-municipio-demo/managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1",
+            "content": "# Vistoriar pontos de iluminação\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"799d8158-3007-457b-9d55-e61f3e3ab8d9\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"commitments\",\n  \"version\": 1,\n  \"created_by\": \"seed\",\n  \"created_at\": \"2026-09-13T17:06:45.648Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Vistoriar pontos de iluminação\",\n  \"description\": \"Compromisso fictício para demonstração do acompanhamento.\",\n  \"department\": \"Secretaria de Zeladoria\",\n  \"owner_name\": \"Ana Costa (fictícia)\",\n  \"due_date\": \"2026-09-30\",\n  \"status\": \"in_progress\",\n  \"neighborhood\": \"Leste\",\n  \"decision_id\": \"c3d4337e-4bdd-4258-9c82-cc1bfada0111\"\n}\n\n<!-- AGM_PROJECTION:799d8158-3007-457b-9d55-e61f3e3ab8d9:1:074fcade769dd494eb80ed437dd5e1a53ebd9ba2060f733902ba741410f65a85 -->",
+            "file_path": "managed/agm-799d8158-3007-457b-9d55-e61f3e3ab8d9-v1.md",
+            "updated_at": "2026-09-13T14:28:01.043181-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 25
+          },
+          {
+            "title": "agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2",
+            "type": "entity",
+            "score": -1.3422075093963761,
+            "entity": "agm-municipio-demo/managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2",
+            "external_id": "f03d89c2-9842-40a9-a125-bd5412616415",
+            "permalink": "agm-municipio-demo/managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2",
+            "content": "# Revisar drenagem no bairro Norte\n\nSIMULAÇÃO — MUNICÍPIO DEMONSTRAÇÃO\n\n{\n  \"id\": \"ff97e70d-2e3d-4569-b050-2ae1664316f0\",\n  \"workspace_id\": \"demo\",\n  \"kind\": \"commitments\",\n  \"version\": 2,\n  \"created_by\": \"2a5cda90-07c3-4512-9872-873de16eebd1\",\n  \"created_at\": \"2026-09-13T18:02:11.513Z\",\n  \"indexing_state\": \"pending\",\n  \"title\": \"Revisar drenagem no bairro Norte\",\n  \"description\": \"SIMULAÇÃO — Vistoriar bocas de lobo e organizar a limpeza preventiva antes do período de chuvas.\",\n  \"department\": \"Secretaria de Obras\",\n  \"owner_name\": \"Joana Ribeiro (fictícia)\",\n  \"due_date\": \"2026-09-11\",\n  \"status\": \"open\",\n  \"neighborhood\": \"Norte\",\n  \"source_refs\": [],\n  \"decision_id\": \"47538f53-81fb-4c43-be75-73daa87c5614\"\n}\n\n<!-- AGM_PROJECTION:ff97e70d-2e3d-4569-b050-2ae1664316f0:2:9032ea42d90dac47fc4f368441f2482ed4d51e3329f191bec149de27ec131c24 -->",
+            "file_path": "managed/agm-ff97e70d-2e3d-4569-b050-2ae1664316f0-v2.md",
+            "updated_at": "2026-09-13T15:13:24.267084-03:00",
+            "metadata": {
+              "note_type": "note"
+            },
+            "entity_id": 41
+          }
+        ],
+        "current_page": 1,
+        "page_size": 10,
+        "total": 8,
+        "total_is_exact": true,
+        "has_more": false
+      }
+    },
+    "isError": false
+  }
+}

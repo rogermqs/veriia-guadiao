@@ -1,0 +1,27 @@
+{
+  "origin": "https://veriia.com.br",
+  "checked_at": "2026-09-13T20:14:08.558Z",
+  "checks": [
+    "static frontend and minified bundle from backend",
+    "readiness",
+    "login",
+    "2000 records / 1030 pending",
+    "OpenRouter analytics and knowledge / verified sources / SSE"
+  ],
+  "answers": [
+    {
+      "message": "Quantos registros existem e quantos estão pendentes na base de demonstração?",
+      "status": "answered",
+      "text": "Na base de demonstração existem 2.000 registros no total, dos quais 1.030 estão pendentes (situação Aberto ou Em atendimento).",
+      "evidence_count": 1,
+      "verified_sources": true
+    },
+    {
+      "message": "Qual é o histórico da revisão de prazo da drenagem do bairro Norte?",
+      "status": "answered",
+      "text": "O histórico da revisão de prazo da drenagem no bairro Norte é o seguinte:\n\n- Em 01/09/2026, a equipe propôs realizar uma vistoria de limpeza no bairro Norte até 12/09/2026.\n- Em 10/09/2026, a equipe revisou o prazo da vistoria para 18/09/2026, justificando a necessidade de concluir o levantamento de equipamentos. O prazo anterior de 12/09 foi substituído.\n\nEssas informações indicam que houve uma prorrogação do prazo inicialmente previsto para a vistoria.",
+      "evidence_count": 2,
+      "verified_sources": true
+    }
+  ]
+}

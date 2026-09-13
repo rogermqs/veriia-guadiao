@@ -1,0 +1,109 @@
+{
+  "validated_at": "2026-09-13T18:22:12.901Z",
+  "model": "openai/gpt-4.1-mini",
+  "results": [
+    {
+      "message": "Quantos registros estão pendentes no Município Demonstração?",
+      "conversation_id": "490a039a-5b7c-4d5a-9bf6-e789da6dc53a",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "No Município Demonstração, há 1.030 registros pendentes, que incluem os status Aberto e Em atendimento.",
+        "evidence_ids": [
+          "c560562b-d26a-4f00-a044-4661b59dc727"
+        ],
+        "query_ids": [
+          "7b03f523-6f00-4111-88c6-85d60fd6e287"
+        ],
+        "limitations": [
+          "Cenário fictício de demonstração.",
+          "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+        ],
+        "queries": [
+          {
+            "id": "7b03f523-6f00-4111-88c6-85d60fd6e287",
+            "query_run_id": "7b03f523-6f00-4111-88c6-85d60fd6e287",
+            "query_version": "demands.summary.v1",
+            "snapshot_id": "ad9c83ba-5eb8-4694-8eb1-ae1680e68aa4",
+            "origin_kind": "synthetic_demo",
+            "data_as_of": "2026-09-13",
+            "source": {
+              "title": "Atendimento ao cidadão • Base simulada",
+              "data_as_of": "2026-09-13",
+              "published_at": "2026-09-13T12:00:00Z",
+              "source_url": "",
+              "sample_info": null,
+              "source_sha256": "187d4e96cd1965dafc7e2fa2c52680e92a195ac19cbc1bfd87a24395ba5edfef",
+              "origin_kind": "synthetic_demo",
+              "transform_version": "v1"
+            },
+            "quality": {
+              "total_rows": 2000,
+              "accepted_rows": 2000,
+              "rejected_rows": 0,
+              "unknown_status_records": 40,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84,
+              "missing_fields": 0,
+              "rejections": [],
+              "status_values": {
+                "Aberto": 538,
+                "Concluído": 806,
+                "Em atendimento": 492,
+                "Aguardando vistoria": 40,
+                "Cancelado": 124
+              },
+              "created_from": "2026-07-01",
+              "created_to": "2026-09-13"
+            },
+            "filters": {
+              "created_from": "2000-01-01",
+              "created_to": "2026-09-13",
+              "request_type": "Solicitação",
+              "group_by": "neighborhood",
+              "limit": 1,
+              "page": 1
+            },
+            "result": {
+              "total_records": 2000,
+              "pending_records": 1030,
+              "closed_records": 806,
+              "cancelled_records": 124,
+              "unknown_status_records": 40,
+              "response_observation_count": 976,
+              "average_response_days": 6.324795081967213,
+              "pending_older_than_30_days": 600,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84
+            },
+            "limitations": [
+              "Cenário fictício de demonstração.",
+              "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+            ]
+          }
+        ],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    },
+    {
+      "message": "Por que o prazo da vistoria do bairro Norte foi revisado?",
+      "conversation_id": "f36f32f8-1cc6-48aa-957e-8165e51d0a98",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "O prazo da vistoria do bairro Norte foi revisado em 10/09/2026 para 18/09/2026 devido à necessidade de concluir o levantamento de equipamentos. O prazo anterior de 12/09 foi substituído por essa nova data.",
+        "evidence_ids": [
+          "e87328cd-0181-4ee4-8a9c-d5317296e2db"
+        ],
+        "query_ids": [],
+        "limitations": [],
+        "queries": [],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    }
+  ]
+}

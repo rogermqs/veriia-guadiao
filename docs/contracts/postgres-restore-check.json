@@ -1,0 +1,32 @@
+{
+  "backup": "/home/linuxadmin/guardiao/backups/20260913T191758Z",
+  "created_at": "20260913T191758Z",
+  "restored": true,
+  "counts": {
+    "guardiao.audit": 326,
+    "guardiao.commitment_import_keys": 1,
+    "guardiao.conversations": 31,
+    "guardiao.datasets": 2,
+    "guardiao.document_versions": 12,
+    "guardiao.documents": 12,
+    "guardiao.entities": 28,
+    "guardiao.evidence": 335,
+    "guardiao.idempotency": 47,
+    "guardiao.imports": 12,
+    "guardiao.jobs": 46,
+    "guardiao.memberships": 2,
+    "guardiao.memory_refs": 45,
+    "guardiao.query_runs": 242,
+    "guardiao.revisions": 34,
+    "guardiao.schema_migrations": 1,
+    "guardiao.sessions": 0,
+    "guardiao.snapshots": 2,
+    "guardiao.turn_events": 219,
+    "guardiao.turns": 37,
+    "guardiao.users": 1,
+    "guardiao.workspaces": 2,
+    "guardiao_demo.records": 2012,
+    "guardiao_real.records": 0
+  },
+  "files": 60
+}

@@ -1,0 +1,88 @@
+version: 2.1
+jobs:
+  verify:
+    docker:
+      - image: node:24.8.0-bookworm
+      - image: postgres:16-bookworm
+        environment:
+          POSTGRES_USER: guardiao_test
+          POSTGRES_PASSWORD: ci-isolated-test-password
+          POSTGRES_DB: guardiao_test
+    resource_class: medium
+    steps:
+      - checkout
+      - run:
+          name: Install pinned dependencies
+          command: npm install --global pnpm@10.32.1 && pnpm install --frozen-lockfile
+      - run:
+          name: Types and SQLite tests
+          command: pnpm typecheck && pnpm test
+      - run:
+          name: PostgreSQL integration tests
+          environment:
+            DATABASE_URL: postgresql://guardiao_test:ci-isolated-test-password@localhost:5432/guardiao_test
+          command: |
+            node --input-type=module -e 'import pg from "pg"; const pool=new pg.Pool({connectionString:process.env.DATABASE_URL}); for(let n=0;;n++){try{await pool.query("SELECT 1");break}catch(e){if(n===29)throw e;await new Promise(r=>setTimeout(r,1000));}} await pool.end();'
+            pnpm exec vitest run tests/health.test.ts tests/domain.test.ts tests/agent.test.ts tests/api.test.ts
+      - run:
+          name: Static frontend and API build
+          command: pnpm build
+      - run:
+          name: Browser checks for health and voice
+          command: |
+            pnpm exec playwright install --with-deps chromium
+            export AGM_BOOTSTRAP_ADMIN_EMAIL=ci@example.test
+            export AGM_BOOTSTRAP_ADMIN_PASSWORD=ci-local-browser-test-password
+            export AGM_API_PORT=3000
+            export AGM_DATA_DIR=/tmp/guardiao-browser
+            pnpm bootstrap
+            node scripts/dev.mjs --production > /tmp/guardiao-browser.log 2>&1 &
+            node --input-type=module -e 'for(let n=0;;n++){try{const r=await fetch("http://localhost:3000/api/v1/health/ready");if(r.ok)break;}catch{} if(n===59)process.exit(1); await new Promise(r=>setTimeout(r,1000));}'
+            pnpm exec playwright test tests/e2e/voice-health.spec.ts
+      - store_artifacts:
+          path: test-results
+  publish:
+    docker:
+      - image: cimg/base:stable
+    resource_class: medium
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build and publish the single application image
+          command: |
+            : "${REGISTRY_HOST:?}" "${REGISTRY_USER:?}" "${REGISTRY_PASSWORD:?}" "${GUARDIAO_IMAGE:?}"
+            printf '%s' "$REGISTRY_PASSWORD" | docker login "$REGISTRY_HOST" --username "$REGISTRY_USER" --password-stdin
+            trap 'docker logout "$REGISTRY_HOST"' EXIT
+            docker build --build-arg BUILD_REVISION="$CIRCLE_SHA1" -f infra/docker/Dockerfile -t "$GUARDIAO_IMAGE:$CIRCLE_SHA1" .
+            docker push "$GUARDIAO_IMAGE:$CIRCLE_SHA1"
+  deploy:
+    docker:
+      - image: node:24.8.0-bookworm
+    steps:
+      - checkout
+      - run:
+          name: Deploy to the exclusive Guardião project and verify revision
+          command: node scripts/deploy-coolify.mjs
+          no_output_timeout: 15m
+workflows:
+  test-build-deploy:
+    jobs:
+      - verify
+      - publish:
+          requires: [verify]
+          context: guardiao-registry
+          filters:
+            branches:
+              only: main
+            tags:
+              ignore: /.*/
+      - deploy:
+          requires: [publish]
+          context: guardiao-production
+          serial-group: << pipeline.project.slug >>/guardiao-production
+          filters:
+            branches:
+              only: main
+            tags:
+              ignore: /.*/

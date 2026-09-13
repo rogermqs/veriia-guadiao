@@ -1,0 +1,24 @@
+{
+  "captured_at": "2026-09-13T18:07:34.107Z",
+  "rows": 1000000,
+  "bytes": 110555628,
+  "import_ms": 161337,
+  "import_timing": "Diferença entre criação da importação e persistência do snapshot",
+  "completed_queries": [
+    {
+      "query_type": "grouped",
+      "count": 20
+    }
+  ],
+  "grouped_p95_ms": null,
+  "query_timeout_ms": 3000,
+  "full_scale_acceptance": false,
+  "memory_peak_measured": false,
+  "error": "O resumo integral excedeu três segundos após 20 agrupamentos concluídos. Uma repetição também atingiu timeout de agrupamento. O p95 não foi consolidado para a implementação final.",
+  "environment": {
+    "cpu": "Apple M4",
+    "memory_gib": 16,
+    "node": "v24.8.0",
+    "platform": "darwin"
+  }
+}

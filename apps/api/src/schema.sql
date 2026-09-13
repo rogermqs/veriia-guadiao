@@ -1,0 +1,37 @@
+PRAGMA journal_mode=WAL;
+PRAGMA foreign_keys=ON;
+PRAGMA busy_timeout=5000;
+CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,email TEXT UNIQUE NOT NULL,password_hash TEXT NOT NULL,name TEXT NOT NULL,active INTEGER NOT NULL DEFAULT 1);
+CREATE TABLE IF NOT EXISTS sessions(id_hash TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id),expires_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS workspaces(id TEXT PRIMARY KEY,name TEXT NOT NULL,origin_kind TEXT NOT NULL,reference_date TEXT NOT NULL,project TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS memberships(user_id TEXT NOT NULL REFERENCES users(id),workspace_id TEXT NOT NULL REFERENCES workspaces(id),role TEXT NOT NULL CHECK(role IN ('admin','manager','analyst','reader')),PRIMARY KEY(user_id,workspace_id));
+CREATE TABLE IF NOT EXISTS datasets(id TEXT PRIMARY KEY,workspace_id TEXT UNIQUE NOT NULL REFERENCES workspaces(id),title TEXT NOT NULL,active_snapshot_id TEXT,previous_snapshot_id TEXT);
+CREATE TABLE IF NOT EXISTS snapshots(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),identity TEXT UNIQUE NOT NULL,metadata TEXT NOT NULL,quality TEXT NOT NULL,state TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS imports(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),filename TEXT NOT NULL,path TEXT NOT NULL,metadata TEXT NOT NULL,state TEXT NOT NULL,result TEXT,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS entities(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),kind TEXT NOT NULL CHECK(kind IN ('decisions','commitments')),payload TEXT NOT NULL,version INTEGER NOT NULL,created_by TEXT NOT NULL,created_at TEXT NOT NULL,indexing_state TEXT NOT NULL DEFAULT 'pending');
+CREATE TABLE IF NOT EXISTS revisions(entity_id TEXT NOT NULL REFERENCES entities(id),version INTEGER NOT NULL,payload TEXT NOT NULL,actor_id TEXT NOT NULL,created_at TEXT NOT NULL,PRIMARY KEY(entity_id,version));
+CREATE TABLE IF NOT EXISTS documents(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),title TEXT NOT NULL,kind TEXT NOT NULL,version INTEGER NOT NULL,origin_kind TEXT NOT NULL,indexing_state TEXT NOT NULL DEFAULT 'pending');
+CREATE TABLE IF NOT EXISTS document_versions(document_id TEXT NOT NULL REFERENCES documents(id),version INTEGER NOT NULL,content TEXT NOT NULL,sha256 TEXT NOT NULL,effective_date TEXT NOT NULL,source_url TEXT NOT NULL DEFAULT '',created_at TEXT NOT NULL,PRIMARY KEY(document_id,version));
+CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),entity_id TEXT NOT NULL,kind TEXT NOT NULL,state TEXT NOT NULL DEFAULT 'queued',attempts INTEGER NOT NULL DEFAULT 0,next_run_at TEXT NOT NULL,lease_until TEXT,last_error TEXT);
+CREATE TABLE IF NOT EXISTS query_runs(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),user_id TEXT NOT NULL,snapshot_id TEXT NOT NULL,query_type TEXT NOT NULL,params TEXT NOT NULL,result TEXT NOT NULL,hash TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS evidence(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),user_id TEXT,kind TEXT NOT NULL,payload TEXT NOT NULL,hash TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS conversations(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL REFERENCES workspaces(id),user_id TEXT NOT NULL REFERENCES users(id),title TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS turns(id TEXT PRIMARY KEY,conversation_id TEXT NOT NULL REFERENCES conversations(id),message TEXT NOT NULL,status TEXT NOT NULL,snapshot_id TEXT,answer TEXT,error TEXT,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS turn_events(turn_id TEXT NOT NULL REFERENCES turns(id),sequence INTEGER NOT NULL,type TEXT NOT NULL,payload TEXT NOT NULL,created_at TEXT NOT NULL,PRIMARY KEY(turn_id,sequence));
+CREATE TABLE IF NOT EXISTS idempotency(workspace_id TEXT NOT NULL,actor_id TEXT NOT NULL,route TEXT NOT NULL,key TEXT NOT NULL,request_hash TEXT NOT NULL,response TEXT NOT NULL,PRIMARY KEY(workspace_id,actor_id,route,key));
+CREATE TABLE IF NOT EXISTS audit(id TEXT PRIMARY KEY,workspace_id TEXT NOT NULL,actor_id TEXT NOT NULL,action TEXT NOT NULL,entity_id TEXT,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS commitment_import_keys(workspace_id TEXT NOT NULL,batch_hash TEXT NOT NULL,external_ref TEXT NOT NULL,entity_id TEXT NOT NULL REFERENCES entities(id),PRIMARY KEY(workspace_id,batch_hash,external_ref));
+CREATE TABLE IF NOT EXISTS schema_migrations(version INTEGER PRIMARY KEY,applied_at TEXT NOT NULL);
+INSERT OR IGNORE INTO schema_migrations VALUES(1,strftime('%Y-%m-%dT%H:%M:%fZ','now'));
+INSERT OR IGNORE INTO commitment_import_keys SELECT workspace_id,substr(key,1,64),substr(key,66),json_extract(response,'$.id') FROM idempotency WHERE route='commitment-row' AND json_extract(response,'$.id') IN (SELECT id FROM entities);
+
+CREATE TABLE IF NOT EXISTS memory_refs(workspace_id TEXT,entity_id TEXT,version INTEGER,permalink TEXT,content_hash TEXT,PRIMARY KEY(workspace_id,entity_id,version));
+
+CREATE TABLE IF NOT EXISTS health_units(workspace_id TEXT NOT NULL REFERENCES workspaces(id),id TEXT NOT NULL,name TEXT NOT NULL,neighborhood TEXT NOT NULL,PRIMARY KEY(workspace_id,id));
+CREATE TABLE IF NOT EXISTS health_agents(workspace_id TEXT NOT NULL,id TEXT NOT NULL,name TEXT NOT NULL,unit_id TEXT NOT NULL,PRIMARY KEY(workspace_id,id),FOREIGN KEY(workspace_id,unit_id) REFERENCES health_units(workspace_id,id));
+CREATE TABLE IF NOT EXISTS health_citizens(workspace_id TEXT NOT NULL,id TEXT NOT NULL,name TEXT NOT NULL,birth_date TEXT NOT NULL,neighborhood TEXT NOT NULL,unit_id TEXT NOT NULL,agent_id TEXT NOT NULL,history TEXT NOT NULL,PRIMARY KEY(workspace_id,id),FOREIGN KEY(workspace_id,unit_id) REFERENCES health_units(workspace_id,id),FOREIGN KEY(workspace_id,agent_id) REFERENCES health_agents(workspace_id,id));
+CREATE TABLE IF NOT EXISTS health_encounters(workspace_id TEXT NOT NULL,id TEXT NOT NULL,citizen_id TEXT NOT NULL,unit_id TEXT NOT NULL,occurred_on TEXT NOT NULL,professional TEXT NOT NULL,reason TEXT NOT NULL,notes TEXT NOT NULL,PRIMARY KEY(workspace_id,id),FOREIGN KEY(workspace_id,citizen_id) REFERENCES health_citizens(workspace_id,id),FOREIGN KEY(workspace_id,unit_id) REFERENCES health_units(workspace_id,id));
+CREATE TABLE IF NOT EXISTS health_prescriptions(workspace_id TEXT NOT NULL,id TEXT NOT NULL,encounter_id TEXT NOT NULL,medication TEXT NOT NULL,instructions TEXT NOT NULL,PRIMARY KEY(workspace_id,id),FOREIGN KEY(workspace_id,encounter_id) REFERENCES health_encounters(workspace_id,id));
+CREATE TABLE IF NOT EXISTS health_visits(workspace_id TEXT NOT NULL,id TEXT NOT NULL,citizen_id TEXT NOT NULL,agent_id TEXT NOT NULL,visited_on TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('completed','scheduled','missed')),notes TEXT NOT NULL,PRIMARY KEY(workspace_id,id),FOREIGN KEY(workspace_id,citizen_id) REFERENCES health_citizens(workspace_id,id),FOREIGN KEY(workspace_id,agent_id) REFERENCES health_agents(workspace_id,id));
+CREATE INDEX IF NOT EXISTS health_encounters_citizen ON health_encounters(workspace_id,citizen_id,occurred_on);
+CREATE INDEX IF NOT EXISTS health_visits_citizen ON health_visits(workspace_id,citizen_id,visited_on);

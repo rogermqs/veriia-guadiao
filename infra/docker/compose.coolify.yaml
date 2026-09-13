@@ -1,0 +1,41 @@
+services:
+  web:
+    image: guardiao:20260913-8
+    pull_policy: never
+    command: ["sh", "-c", "node --import tsx scripts/bootstrap.ts && node scripts/memory-setup.mjs && node apps/api/dist/apps/api/src/main.js"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      AGM_PG_SCHEMA: guardiao
+      AGM_API_HOST: 0.0.0.0
+      AGM_API_PORT: 3000
+      AGM_PUBLIC_ORIGIN: https://veriia.com.br
+      AGM_BOOTSTRAP_ADMIN_EMAIL: ${AGM_BOOTSTRAP_ADMIN_EMAIL}
+      AGM_BOOTSTRAP_ADMIN_PASSWORD: ${AGM_BOOTSTRAP_ADMIN_PASSWORD}
+      AGM_LLM_API_KEY: ${AGM_LLM_API_KEY}
+      AGM_LLM_MODEL: ${AGM_LLM_MODEL}
+      AGM_LLM_BASE_URL: https://openrouter.ai/api/v1
+      AGM_KNOWLEDGE_SEARCH_MODE: hybrid
+      NODE_OPTIONS: --max-old-space-size=512
+      HF_HOME: /app/data/cache/huggingface
+      FASTEMBED_CACHE_PATH: /app/data/cache/fastembed
+      OMP_NUM_THREADS: 1
+      TOKENIZERS_PARALLELISM: 'false'
+    volumes:
+      - /home/linuxadmin/guardiao/data:/app/data
+    networks:
+      - default
+      - coolify
+    expose:
+      - "3000"
+    mem_limit: 1536m
+    cpus: 1.0
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/v1/health/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      start_period: 120s
+    restart: unless-stopped
+
+networks:
+  coolify:
+    external: true

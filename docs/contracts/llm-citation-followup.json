@@ -1,0 +1,185 @@
+{
+  "validated_at": "2026-09-13T18:41:37.896Z",
+  "model": "openai/gpt-4.1-mini",
+  "results": [
+    {
+      "message": "Quantos registros existem e quantos estão pendentes?",
+      "conversation_id": "eb255075-f656-47cf-a1ae-566bed29e288",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "Existem 2.000 registros no total, dos quais 1.030 estão pendentes (situação Aberto ou Em atendimento).",
+        "evidence_ids": [
+          "a1e97246-9581-47b6-bcd8-a2805d3b2fde"
+        ],
+        "query_ids": [
+          "ee2c7d79-1d9c-48d5-ab0c-0e95198eb364"
+        ],
+        "limitations": [
+          "Cenário fictício de demonstração.",
+          "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+        ],
+        "queries": [
+          {
+            "id": "ee2c7d79-1d9c-48d5-ab0c-0e95198eb364",
+            "query_run_id": "ee2c7d79-1d9c-48d5-ab0c-0e95198eb364",
+            "query_version": "demands.summary.v1",
+            "snapshot_id": "ad9c83ba-5eb8-4694-8eb1-ae1680e68aa4",
+            "origin_kind": "synthetic_demo",
+            "data_as_of": "2026-09-13",
+            "source": {
+              "title": "Atendimento ao cidadão • Base simulada",
+              "data_as_of": "2026-09-13",
+              "published_at": "2026-09-13T12:00:00Z",
+              "source_url": "",
+              "sample_info": null,
+              "source_sha256": "187d4e96cd1965dafc7e2fa2c52680e92a195ac19cbc1bfd87a24395ba5edfef",
+              "origin_kind": "synthetic_demo",
+              "transform_version": "v1"
+            },
+            "quality": {
+              "total_rows": 2000,
+              "accepted_rows": 2000,
+              "rejected_rows": 0,
+              "unknown_status_records": 40,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84,
+              "missing_fields": 0,
+              "rejections": [],
+              "status_values": {
+                "Aberto": 538,
+                "Concluído": 806,
+                "Em atendimento": 492,
+                "Aguardando vistoria": 40,
+                "Cancelado": 124
+              },
+              "created_from": "2026-07-01",
+              "created_to": "2026-09-13"
+            },
+            "filters": {
+              "request_type": "Solicitação",
+              "group_by": "neighborhood",
+              "limit": 20,
+              "page": 1
+            },
+            "result": {
+              "total_records": 2000,
+              "pending_records": 1030,
+              "closed_records": 806,
+              "cancelled_records": 124,
+              "unknown_status_records": 40,
+              "response_observation_count": 976,
+              "average_response_days": 6.324795081967213,
+              "pending_older_than_30_days": 600,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84
+            },
+            "limitations": [
+              "Cenário fictício de demonstração.",
+              "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+            ]
+          }
+        ],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    },
+    {
+      "message": "E quais bairros concentram mais solicitações?",
+      "conversation_id": "eb255075-f656-47cf-a1ae-566bed29e288",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "Os bairros que concentram mais solicitações são: Norte com 356, Oeste com 349, Centro com 331, Jardim das Flores com 331 e Leste com 325 solicitações.",
+        "evidence_ids": [
+          "02c3e456-fc9d-4c0d-91d4-fe6ec3e312e7"
+        ],
+        "query_ids": [
+          "6a73e870-0870-47bf-83d6-52f96ba0eda8"
+        ],
+        "limitations": [
+          "Cenário fictício de demonstração.",
+          "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+        ],
+        "queries": [
+          {
+            "id": "6a73e870-0870-47bf-83d6-52f96ba0eda8",
+            "query_run_id": "6a73e870-0870-47bf-83d6-52f96ba0eda8",
+            "query_version": "demands.grouped.v1",
+            "snapshot_id": "ad9c83ba-5eb8-4694-8eb1-ae1680e68aa4",
+            "origin_kind": "synthetic_demo",
+            "data_as_of": "2026-09-13",
+            "source": {
+              "title": "Atendimento ao cidadão • Base simulada",
+              "data_as_of": "2026-09-13",
+              "published_at": "2026-09-13T12:00:00Z",
+              "source_url": "",
+              "sample_info": null,
+              "source_sha256": "187d4e96cd1965dafc7e2fa2c52680e92a195ac19cbc1bfd87a24395ba5edfef",
+              "origin_kind": "synthetic_demo",
+              "transform_version": "v1"
+            },
+            "quality": {
+              "total_rows": 2000,
+              "accepted_rows": 2000,
+              "rejected_rows": 0,
+              "unknown_status_records": 40,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84,
+              "missing_fields": 0,
+              "rejections": [],
+              "status_values": {
+                "Aberto": 538,
+                "Concluído": 806,
+                "Em atendimento": 492,
+                "Aguardando vistoria": 40,
+                "Cancelado": 124
+              },
+              "created_from": "2026-07-01",
+              "created_to": "2026-09-13"
+            },
+            "filters": {
+              "request_type": "Solicitação",
+              "group_by": "neighborhood",
+              "limit": 5,
+              "page": 1
+            },
+            "result": {
+              "rows": [
+                {
+                  "label": "Norte",
+                  "value": 356
+                },
+                {
+                  "label": "Oeste",
+                  "value": 349
+                },
+                {
+                  "label": "Centro",
+                  "value": 331
+                },
+                {
+                  "label": "Jardim das Flores",
+                  "value": 331
+                },
+                {
+                  "label": "Leste",
+                  "value": 325
+                }
+              ],
+              "total_records_in_scope": 2000
+            },
+            "limitations": [
+              "Cenário fictício de demonstração.",
+              "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+            ]
+          }
+        ],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    }
+  ]
+}

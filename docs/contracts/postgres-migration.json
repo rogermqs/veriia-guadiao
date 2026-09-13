@@ -1,0 +1,100 @@
+{
+  "migrated_at": "2026-09-13T19:10:58.009Z",
+  "source": "/Users/rogermarques/Documents/workspace/veriia/data/backups/backup-2026-09-13T19-09-28.954Z",
+  "tables": {
+    "app.users": {
+      "rows": 1,
+      "sha256": "245cd2b51972a935233fc680d2fd3996a7c52e2b8a5c6baf416cf965fb806cc4"
+    },
+    "app.workspaces": {
+      "rows": 2,
+      "sha256": "bd6d8b1d64510abc79ed77180aab7c79c3f097fd0fe470e4b6618c7b9b5b6585"
+    },
+    "app.memberships": {
+      "rows": 2,
+      "sha256": "7a23add32a52cad2b4cf67cdb2f61d7744d3d4eb9a7e07c12b4dde4091dafe72"
+    },
+    "app.datasets": {
+      "rows": 2,
+      "sha256": "26e335338260c6042c840bcb2176de292e8ff355dcccdfba90ebdaaf8275e28b"
+    },
+    "app.snapshots": {
+      "rows": 2,
+      "sha256": "234371b0db5d75d5f665b305609314df1394f5f139dacda93722645f0bcc05b2"
+    },
+    "app.imports": {
+      "rows": 12,
+      "sha256": "2562c913afd31d5b628071e8b11f296899659bc6146ac8af92c97266345cf83f"
+    },
+    "app.entities": {
+      "rows": 28,
+      "sha256": "7ef78bd4269ae8f201751e2ed180a1f0afaf374343f790dba78d4e5eb6e857a4"
+    },
+    "app.revisions": {
+      "rows": 34,
+      "sha256": "da6f619c25428466db649f456892366c285419088d9cad2b140e5bd82b0eef1b"
+    },
+    "app.documents": {
+      "rows": 12,
+      "sha256": "c0bb6d4e96e11f655776ca7c5ac8d389fd51ecddbcfef2a4b66dfe95181c666a"
+    },
+    "app.document_versions": {
+      "rows": 12,
+      "sha256": "42e679cbca2fac4dfcd1dccd7c984a34d9b9ef1764fbf39c2bad01bac3234d8f"
+    },
+    "app.jobs": {
+      "rows": 46,
+      "sha256": "63baac45ca3917125d78323715bd5ece5fb3d3ca589e7edeb6cf57a1deacdf22"
+    },
+    "app.query_runs": {
+      "rows": 242,
+      "sha256": "ca450eb99bed82cd9e1890546d83e4ecbfa566133007c0a81f2ae88d03da991f"
+    },
+    "app.evidence": {
+      "rows": 335,
+      "sha256": "34c9678ea1391833be69ef688b211552a53800596d36ddbad9c0bc084536ccb7"
+    },
+    "app.conversations": {
+      "rows": 31,
+      "sha256": "f451abb86614e9cc6826a530f62e3cf4209eef331d1ac1f9de189769297ba516"
+    },
+    "app.turns": {
+      "rows": 37,
+      "sha256": "ad6e15a8b2f19566c092cb42f023089f1d59d089125a1bfafc30cbd21bda655b"
+    },
+    "app.turn_events": {
+      "rows": 219,
+      "sha256": "c5da60c9de84e7ef4ab07a4a2240861f1c81f37483c7919443fe17b18400d239"
+    },
+    "app.idempotency": {
+      "rows": 47,
+      "sha256": "4f29d4a31e16fbdd6804c1a54bc0671b66fd376cd161adae1af41dcbbf1c3bca"
+    },
+    "app.audit": {
+      "rows": 326,
+      "sha256": "ac0d8134e1549091a4d6a4d271d8ee09db0e6a501235bc1034de13012d17a88b"
+    },
+    "app.memory_refs": {
+      "rows": 45,
+      "sha256": "722c4e562a771f16d8bacd748efb4cbf4e701a07c209ae376d410c3b060b0119"
+    },
+    "app.commitment_import_keys": {
+      "rows": 1,
+      "sha256": "1438e15c160978fb1e53bf5b01e140bc8141bdbb0332c91e026842b160ed0da7"
+    },
+    "analytics-demo.records": {
+      "rows": 2012,
+      "sha256": "7afdac0d030a3b6730dc2dc07b6700c00fcccf69d0ad10cf34caac0a9cdae243"
+    },
+    "analytics-real.records": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "excluded": [
+    "sessions"
+  ],
+  "transformed": [
+    "imports.path"
+  ]
+}

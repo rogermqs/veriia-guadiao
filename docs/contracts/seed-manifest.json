@@ -1,0 +1,12 @@
+{
+  "algorithm": "LCG Numerical Recipes v1",
+  "seed": 20260913,
+  "sha256": "187d4e96cd1965dafc7e2fa2c52680e92a195ac19cbc1bfd87a24395ba5edfef",
+  "reference": {
+    "total_records": 2000,
+    "pending_records": 1030,
+    "closed_records": 806,
+    "cancelled_records": 124,
+    "unknown_status_records": 40
+  }
+}

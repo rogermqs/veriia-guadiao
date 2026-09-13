@@ -1,0 +1,20 @@
+{
+  "restored_at": "2026-09-13T18:03:50.302Z",
+  "directory": "data/backups/restore-1789322629504",
+  "integrity": "ok",
+  "state": {
+    "decisions": 8,
+    "commitments": 17,
+    "snapshots": [
+      {
+        "id": "dataset-demo",
+        "active_snapshot_id": "ad9c83ba-5eb8-4694-8eb1-ae1680e68aa4"
+      },
+      {
+        "id": "dataset-real",
+        "active_snapshot_id": null
+      }
+    ]
+  },
+  "verified_files": 71
+}

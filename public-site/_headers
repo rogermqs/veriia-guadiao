@@ -1,0 +1,7 @@
+# Preview deployment. Remove X-Robots-Tag and the HTML robots meta only after approval.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Robots-Tag: noindex, nofollow

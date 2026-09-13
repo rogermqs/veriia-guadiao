@@ -1,0 +1,26 @@
+{
+  "rows": 1000000,
+  "bytes": 110555628,
+  "import_ms": 12526,
+  "query_runs": 20,
+  "grouped_p95_ms": 1008,
+  "summary": {
+    "total_records": 1000000,
+    "pending_records": 0,
+    "closed_records": 1000000,
+    "cancelled_records": 0,
+    "unknown_status_records": 0,
+    "response_observation_count": 1000000,
+    "average_response_days": 2,
+    "pending_older_than_30_days": 0,
+    "invalid_response_date_records": 0,
+    "duplicate_fingerprint_excess_rows": 0
+  },
+  "environment": {
+    "node": "v24.8.0",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "memory_peak_measured": false,
+  "note": "Dados sintéticos isolados, um milhão de linhas com conteúdo distinto; relatório não mede carga concorrente nem a máquina de referência da SDD."
+}

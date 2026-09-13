@@ -1,0 +1,4 @@
+# Direção visual
+Navegação lateral azul profundo, logo Guardião e assinatura Segundo Cérebro. Fundo de trabalho cinza muito claro, superfícies quase brancas e tipografia system-ui. Ações em verde escuro, foco visível, contornos sutis e cantos de 8 px. Hierarquia de títulos 28/20/16 px e texto 14 px. Login dividido em narrativa institucional e formulário claro. Layout compacto com tabelas legíveis, visualizações com tabela equivalente, menu recolhido no celular e painéis de fontes com foco gerenciado.
+
+Segundo Cérebro: ilustração vetorial dourada, dois hemisférios com neurônios e conexões sobre azul profundo. Na hero, seis conexões sequenciais se completam e iluminam o cérebro. No chat, faixa compacta com cérebro de 160 × 138 px (120 × 112 px no celular), identificação Segundo Cérebro e pulsação suave de 2,2 segundos vinculada ao processamento. A conversa tem prioridade visual. Manter conteúdo e fontes legíveis. Respeitar prefers-reduced-motion.

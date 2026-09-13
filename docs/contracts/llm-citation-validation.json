@@ -1,0 +1,225 @@
+{
+  "validated_at": "2026-09-13T18:40:38.349Z",
+  "model": "openai/gpt-4.1-mini",
+  "results": [
+    {
+      "message": "Quantos registros existem e quantos estão pendentes?",
+      "conversation_id": "ad98411c-42de-4e7e-9e30-d737658cd124",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "Existem no total 2.000 registros, dos quais 1.030 estão pendentes (incluindo os status Aberto, Em atendimento e Aguardando vistoria).",
+        "evidence_ids": [
+          "dea6228c-d101-49dd-8643-59e66a9ffc0b"
+        ],
+        "query_ids": [
+          "d6ad1d40-4918-49e1-9f93-73fa1ff00c0d"
+        ],
+        "limitations": [
+          "Cenário fictício de demonstração.",
+          "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+        ],
+        "queries": [
+          {
+            "id": "d6ad1d40-4918-49e1-9f93-73fa1ff00c0d",
+            "query_run_id": "d6ad1d40-4918-49e1-9f93-73fa1ff00c0d",
+            "query_version": "demands.summary.v1",
+            "snapshot_id": "ad9c83ba-5eb8-4694-8eb1-ae1680e68aa4",
+            "origin_kind": "synthetic_demo",
+            "data_as_of": "2026-09-13",
+            "source": {
+              "title": "Atendimento ao cidadão • Base simulada",
+              "data_as_of": "2026-09-13",
+              "published_at": "2026-09-13T12:00:00Z",
+              "source_url": "",
+              "sample_info": null,
+              "source_sha256": "187d4e96cd1965dafc7e2fa2c52680e92a195ac19cbc1bfd87a24395ba5edfef",
+              "origin_kind": "synthetic_demo",
+              "transform_version": "v1"
+            },
+            "quality": {
+              "total_rows": 2000,
+              "accepted_rows": 2000,
+              "rejected_rows": 0,
+              "unknown_status_records": 40,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84,
+              "missing_fields": 0,
+              "rejections": [],
+              "status_values": {
+                "Aberto": 538,
+                "Concluído": 806,
+                "Em atendimento": 492,
+                "Aguardando vistoria": 40,
+                "Cancelado": 124
+              },
+              "created_from": "2026-07-01",
+              "created_to": "2026-09-13"
+            },
+            "filters": {
+              "request_type": "Solicitação",
+              "group_by": "neighborhood",
+              "limit": 20,
+              "page": 1
+            },
+            "result": {
+              "total_records": 2000,
+              "pending_records": 1030,
+              "closed_records": 806,
+              "cancelled_records": 124,
+              "unknown_status_records": 40,
+              "response_observation_count": 976,
+              "average_response_days": 6.324795081967213,
+              "pending_older_than_30_days": 600,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84
+            },
+            "limitations": [
+              "Cenário fictício de demonstração.",
+              "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+            ]
+          }
+        ],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    },
+    {
+      "message": "Quais bairros concentram mais solicitações?",
+      "conversation_id": "10bb94d0-e186-4d10-8355-ddf534a26c0b",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "Os bairros que concentram mais solicitações são, em ordem decrescente: Norte, Oeste, Centro, Jardim das Flores, Leste e Sul, com destaque para o bairro Norte que possui a maior quantidade de solicitações registradas.",
+        "evidence_ids": [
+          "7e73e7cc-45cf-450a-90f4-c9595d479803"
+        ],
+        "query_ids": [
+          "8645199a-207c-4614-af10-e322d90d60e1"
+        ],
+        "limitations": [
+          "Cenário fictício de demonstração.",
+          "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+        ],
+        "queries": [
+          {
+            "id": "8645199a-207c-4614-af10-e322d90d60e1",
+            "query_run_id": "8645199a-207c-4614-af10-e322d90d60e1",
+            "query_version": "demands.grouped.v1",
+            "snapshot_id": "ad9c83ba-5eb8-4694-8eb1-ae1680e68aa4",
+            "origin_kind": "synthetic_demo",
+            "data_as_of": "2026-09-13",
+            "source": {
+              "title": "Atendimento ao cidadão • Base simulada",
+              "data_as_of": "2026-09-13",
+              "published_at": "2026-09-13T12:00:00Z",
+              "source_url": "",
+              "sample_info": null,
+              "source_sha256": "187d4e96cd1965dafc7e2fa2c52680e92a195ac19cbc1bfd87a24395ba5edfef",
+              "origin_kind": "synthetic_demo",
+              "transform_version": "v1"
+            },
+            "quality": {
+              "total_rows": 2000,
+              "accepted_rows": 2000,
+              "rejected_rows": 0,
+              "unknown_status_records": 40,
+              "invalid_response_date_records": 0,
+              "duplicate_fingerprint_excess_rows": 84,
+              "missing_fields": 0,
+              "rejections": [],
+              "status_values": {
+                "Aberto": 538,
+                "Concluído": 806,
+                "Em atendimento": 492,
+                "Aguardando vistoria": 40,
+                "Cancelado": 124
+              },
+              "created_from": "2026-07-01",
+              "created_to": "2026-09-13"
+            },
+            "filters": {
+              "request_type": "Solicitação",
+              "group_by": "neighborhood",
+              "limit": 10,
+              "page": 1
+            },
+            "result": {
+              "rows": [
+                {
+                  "label": "Norte",
+                  "value": 356
+                },
+                {
+                  "label": "Oeste",
+                  "value": 349
+                },
+                {
+                  "label": "Centro",
+                  "value": 331
+                },
+                {
+                  "label": "Jardim das Flores",
+                  "value": 331
+                },
+                {
+                  "label": "Leste",
+                  "value": 325
+                },
+                {
+                  "label": "Sul",
+                  "value": 308
+                }
+              ],
+              "total_records_in_scope": 2000
+            },
+            "limitations": [
+              "Cenário fictício de demonstração.",
+              "Registros não representam protocolos únicos. Data de resposta não comprova execução do serviço."
+            ]
+          }
+        ],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    },
+    {
+      "message": "Por que o prazo da vistoria do bairro Norte foi revisado?",
+      "conversation_id": "2805c61a-91df-482c-9588-943b1d25a124",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "O prazo da vistoria do bairro Norte foi revisado em 10/09/2026 para o dia 18/09/2026. A justificativa para essa revisão foi a necessidade de concluir o levantamento de equipamentos, substituindo o prazo anterior que era 12/09.",
+        "evidence_ids": [
+          "b8c05e0d-3f98-4331-8c40-2d20102b0876"
+        ],
+        "query_ids": [],
+        "limitations": [],
+        "queries": [],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    },
+    {
+      "message": "Quais compromissos de Obras estão em aberto?",
+      "conversation_id": "21ede3c1-ef60-45a6-ba8f-1f7c39315738",
+      "status": "completed",
+      "answer": {
+        "status": "answered",
+        "text": "Os compromissos de Obras que estão em aberto incluem: Plano de manutenção E2E (dois compromissos com vencimento em 30/09/2026), Recuperar calçadas no Centro com prazo até 20/09/2026, Revisar drenagem no bairro Norte com prazo até 11/09/2026, Sinalizar travessias no bairro Sul com prazo até 25/09/2026, Apresentar plano de manutenção com prazo até 30/09/2026, Inspecionar pavimento no bairro Leste com prazo até 18/09/2026, Apresentar cronograma de obras no Oeste com prazo até 30/09/2026, Conferir registros sem situação com prazo até 30/09/2026, Consolidar demandas do bairro Norte com prazo até 13/09/2026, e Preparar cronograma das praças com prazo até 12/09/2026.",
+        "evidence_ids": [
+          "0e79b497-1ce2-47ac-8022-163ddd956423"
+        ],
+        "query_ids": [],
+        "limitations": [],
+        "queries": [],
+        "writes": [],
+        "origin_kind": "synthetic_demo"
+      },
+      "error": null
+    }
+  ]
+}

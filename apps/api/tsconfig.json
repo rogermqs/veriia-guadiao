@@ -1,0 +1,1 @@
+{"compilerOptions":{"target":"ES2022","module":"commonjs","moduleResolution":"node","esModuleInterop":true,"experimentalDecorators":true,"emitDecoratorMetadata":true,"skipLibCheck":true,"strict":false,"outDir":"dist","rootDir":"../../"},"include":["src/**/*.ts","../../packages/contracts/**/*.ts"]}

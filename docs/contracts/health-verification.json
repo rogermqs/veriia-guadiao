@@ -1,0 +1,62 @@
+{
+  "origin": "https://veriia.com.br",
+  "checked_at": "2026-09-13T20:14:06.676Z",
+  "revision": "20260913-5",
+  "citizens": 24,
+  "units": 3,
+  "answers": [
+    {
+      "message": "Qual UBS atendeu Maria Oliveira e o que foi prescrito no último atendimento?",
+      "status": "answered",
+      "text": "Maria Oliveira foi atendida na UBS Jardim Norte no último atendimento em 02 de setembro de 2026. Na ocasião, foi prescrito o \"Medicamento demonstrativo A\", que é uma prescrição fictícia sem posologia clínica, apenas um exemplo de registro.",
+      "evidence_ids": [
+        "a935deef-9460-4401-bd1a-b9b8c4dc8b12",
+        "b6e7fd1d-5cf4-4a20-b726-0ec0ef0a5806"
+      ],
+      "query_ids": [],
+      "limitations": [
+        "Dados inteiramente fictícios para demonstração; não são prontuários reais.",
+        "Prescrições simuladas não constituem orientação de tratamento."
+      ],
+      "queries": [],
+      "writes": [],
+      "origin_kind": "synthetic_demo",
+      "verified_sources": true
+    },
+    {
+      "message": "Qual agente visitou Maria Oliveira? Diferencie visitas realizadas e agendadas.",
+      "status": "answered",
+      "text": "A agente Ana Ribeiro visitou Maria Oliveira. Houve uma visita domiciliar realizada em 16/08/2026 para atualização cadastral e acompanhamento. Além disso, há uma visita de acompanhamento agendada para 18/09/2026, ainda não realizada.",
+      "evidence_ids": [
+        "f41b7cb7-5b18-4cac-ace6-ee17a2b91d75",
+        "3f97995b-5efb-474f-a7c5-28eec485044a"
+      ],
+      "query_ids": [],
+      "limitations": [
+        "Dados inteiramente fictícios para demonstração; não são prontuários reais.",
+        "Prescrições simuladas não constituem orientação de tratamento."
+      ],
+      "queries": [],
+      "writes": [],
+      "origin_kind": "synthetic_demo",
+      "verified_sources": true
+    },
+    {
+      "message": "Quais visitas de Ana Ribeiro já foram realizadas?",
+      "status": "answered",
+      "text": "Ana Ribeiro realizou as seguintes visitas domiciliares para atualização cadastral e acompanhamento, todas pela equipe da UBS Jardim Norte:\n- 11/09/2026: Visita a Sofia Teixeira\n- 09/09/2026: Visita a Lucia Martins\n- 24/08/2026: Visita a Sofia Teixeira\n- 22/08/2026: Visita a Lucia Martins\n- 18/08/2026: Visita a Beatriz Castro\n- 16/08/2026: Visita a Maria Oliveira",
+      "evidence_ids": [
+        "d07fb48b-abfe-4959-9807-4ae811b5a78b"
+      ],
+      "query_ids": [],
+      "limitations": [
+        "Dados inteiramente fictícios para demonstração; não são prontuários reais.",
+        "Prescrições simuladas não constituem orientação de tratamento."
+      ],
+      "queries": [],
+      "writes": [],
+      "origin_kind": "synthetic_demo",
+      "verified_sources": true
+    }
+  ]
+}

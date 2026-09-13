@@ -1,0 +1,10 @@
+{
+  "change": "Segundo C\u00e9rebro substitui o cabe\u00e7alho duplicado",
+  "desktop_width": 1440,
+  "previous_header_area_px": 217.296875,
+  "new_header_area_px": 151,
+  "gained_message_space_px": 66.296875,
+  "local_browser_checks": "passed",
+  "voice_health_browser_tests": 3,
+  "mobile_overflow": false
+}
