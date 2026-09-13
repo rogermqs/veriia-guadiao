@@ -38,6 +38,7 @@ export default function Chat({ w, onSource }: any) {
   const [autoVoice, setAutoVoice] = useState(false);
   const autoVoiceRef = useRef(false);
   autoVoiceRef.current = autoVoice;
+  const brainThinking = busy || voice.speaking;
   const viewEpoch = useRef(0);
   const stream = useRef<EventSource | null>(null),
     active = useRef<string | null>(null),
@@ -214,11 +215,13 @@ export default function Chat({ w, onSource }: any) {
       </aside>
       <section className="chat-main">
         <SecondBrain
-          active={busy || voice.listening || voice.speaking}
+          active={brainThinking}
           status={
             voice.listening
               ? "Ouvindo você…"
-              : voice.speaking
+              : busy
+                ? "Consultando..."
+                : voice.speaking
                 ? "Falando com você…"
                 : undefined
           }

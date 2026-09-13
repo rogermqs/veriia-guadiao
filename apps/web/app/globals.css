@@ -2798,8 +2798,8 @@ th {
   justify-content: center;
   gap: 20px;
   flex-shrink: 0;
-  min-height: 112px;
-  padding: 4px 24px;
+  min-height: 98px;
+  padding: 3px 22px;
   background: radial-gradient(
     ellipse at 28% 55%,
     #24423f 0%,
@@ -2811,8 +2811,8 @@ th {
   overflow: hidden;
 }
 .console-brain-art {
-  width: 118px;
-  height: 98px;
+  width: 104px;
+  height: 86px;
   flex-shrink: 0;
   position: relative;
 }
@@ -2880,8 +2880,14 @@ th {
 .is-thinking .console-brain {
   animation: brain-thinking 2.2s ease-in-out infinite;
 }
+.is-thinking .console-brain-art {
+  animation: brain-spin 7.5s linear infinite;
+}
 .is-thinking .brain-core-logo {
   animation: core-thinking 2.2s ease-in-out infinite;
+}
+.is-thinking .second-brain-console {
+  box-shadow: 0 0 24px #e7c67a3d;
 }
 .is-thinking .brain-state > span {
   animation: brain-thinking 2.2s ease-in-out infinite;
@@ -2915,11 +2921,11 @@ th {
   0%,
   100% {
     opacity: 0.55;
-    filter: drop-shadow(0 0 3px #e0bd6744);
+    filter: drop-shadow(0 0 16px #ffd77f66);
   }
   50% {
     opacity: 1;
-    filter: drop-shadow(0 0 18px #f3cf83bb);
+    filter: drop-shadow(0 0 36px #ffdb8cdd);
   }
 }
 @keyframes core-thinking {
@@ -2931,6 +2937,14 @@ th {
     box-shadow: 0 0 40px #f5d79788;
   }
 }
+@keyframes brain-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 1600px) {
   .second-brain-console {
     gap: 24px;
@@ -2939,11 +2953,11 @@ th {
 @media (max-width: 1050px) {
   .second-brain-console {
     gap: 10px;
-    padding: 8px 14px;
+    padding: 6px 14px;
   }
   .console-brain-art {
-    width: 150px;
-    height: 130px;
+    width: 120px;
+    height: 100px;
   }
   .console-brain-copy h1 {
     font-size: 21px;
@@ -2951,13 +2965,13 @@ th {
 }
 @media (max-width: 650px) {
   .second-brain-console {
-    min-height: 104px;
+    min-height: 90px;
     gap: 12px;
     padding: 6px 16px;
   }
   .console-brain-art {
-    width: 102px;
-    height: 86px;
+    width: 90px;
+    height: 74px;
   }
   .console-brain-copy {
     flex: 1;

@@ -55,7 +55,17 @@ jobs:
             printf '%s' "$REGISTRY_PASSWORD" | docker login "$REGISTRY_HOST" --username "$REGISTRY_USER" --password-stdin
             trap 'docker logout "$REGISTRY_HOST"' EXIT
             docker build --build-arg BUILD_REVISION="$CIRCLE_SHA1" -f infra/docker/Dockerfile -t "$GUARDIAO_IMAGE:$CIRCLE_SHA1" .
-            docker push "$GUARDIAO_IMAGE:$CIRCLE_SHA1"
+            for attempt in 1 2 3; do
+              if docker push "$GUARDIAO_IMAGE:$CIRCLE_SHA1"; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "Falha no push após 3 tentativas."
+                exit 1
+              fi
+              echo "Tentativa $attempt falhou. Retry em 12s..."
+              sleep 12
+            done
   deploy:
     docker:
       - image: node:24.8.0-bookworm
