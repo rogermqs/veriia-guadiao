@@ -173,6 +173,7 @@ export default function Chat({ w, onSource }: any) {
         </button>
         <button
           className="btn secondary sidebar-new-conversation"
+          aria-label="Nova conversa"
           onClick={() => {
             voice.stop();
             viewEpoch.current++;
