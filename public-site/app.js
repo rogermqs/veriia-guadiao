@@ -9,6 +9,8 @@
 
   const modules = {
     triagem: { title: 'Demandas e indicadores', icon: 'shield', copy: 'Consulte demandas por bairro, secretaria e situação. Identifique pendências e confira a origem de cada indicador.' },
+    financeiro: { title: 'Financeiro municipal', icon: 'data', copy: 'Cruze demandas, prioridades e indicadores para apoiar discussões de orçamento, custeio e execução financeira.' },
+    contratos: { title: 'Contratos', icon: 'file', copy: 'Conecte fornecedores, prazos, documentos e compromissos para acompanhar riscos e impactos na gestão.' },
     credito: { title: 'Conhecimento', icon: 'sliders', copy: 'Reúna atas, relatórios e documentos. Consulte o Segundo Cérebro e confira as fontes que fundamentam a resposta.' },
     instala: { title: 'Decisões', icon: 'route', copy: 'Registre o que foi decidido, por quê e com base em quais documentos. Preserve as revisões e o contexto da gestão.' },
     jornada: { title: 'Compromissos', icon: 'cycle', copy: 'Transforme decisões em ações com responsáveis, prazos e situação. Acompanhe o que está aberto, em andamento ou concluído.' },
@@ -17,7 +19,7 @@
   };
 
   const steps = [
-    ['Dados dispersos.\nUma visão conectada.', 'Demandas, documentos, indicadores e registros de saúde disponíveis passam a compor o contexto da gestão. Na demonstração, os históricos de cidadãos são inteiramente fictícios.'],
+    ['Dados dispersos.\nUma visão conectada.', 'Demandas, saúde, financeiro, contratos, documentos e indicadores disponíveis passam a compor o contexto da gestão. Na demonstração, os históricos de cidadãos são inteiramente fictícios.'],
     ['Informação com fonte.\nContexto para entender.', 'Pergunte em linguagem natural. O Segundo Cérebro consulta as fontes do espaço de trabalho e reúne o contexto para você conferir antes de decidir.'],
     ['Inteligência para apoiar.\nA decisão é da gestão.', 'Compare informações, confira as evidências e registre a decisão, sua justificativa e os documentos de apoio. Uma sugestão da IA não equivale a uma decisão aprovada.'],
     ['Uma boa decisão\nprecisa sair do papel.', 'Registre compromissos com responsáveis e prazos. Acompanhe o andamento das ações e consulte as pendências da gestão.'],
@@ -147,7 +149,7 @@
   function openProduct(product) {
     if (!['guardiao'].includes(product)) return;
     activeProduct = product;
-    $('#dialog-logo').src = 'assets/guardiao.png';
+    $('#dialog-logo').src = 'assets/guardiao-neural-logo.png';
     $('#dialog-logo').alt = 'Guardião';
     $('#dialog-logo').width = 247;
     $('#dialog-logo').height = 239;

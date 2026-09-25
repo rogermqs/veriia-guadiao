@@ -1,4 +1,5 @@
 "use client";
+import BrainOverview from "./brain-overview";
 import { useEffect, useState } from "react";
 import {
   ArrowRight,
@@ -124,6 +125,7 @@ export default function Dashboard({
           Exportar dados
         </button>
       </header>
+      <BrainOverview navigate={navigate} />
       <div className="filters">
         <span className="filter-label">
           <SlidersHorizontal size={16} />
