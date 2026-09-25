@@ -1,3 +1,4 @@
+import BrainArtwork from "./brain-artwork";
 export default function SecondBrain({
   active = false,
   status,
@@ -11,12 +12,7 @@ export default function SecondBrain({
       aria-label="Guardião, seu Segundo Cérebro"
       aria-busy={active}
     >
-      <div className="console-brain-art" aria-hidden="true">
-        <img className="console-brain" src="/assets/second-brain.svg" alt="" />
-        <div className="brain-core-logo">
-          <img src="/assets/guardiao-symbol.png" alt="" />
-        </div>
-      </div>
+      <BrainArtwork active={active} className="console-neural-art" />
       <div className="console-brain-copy">
         <span className="brain-wordmark">GUARDIÃO</span>
         <h1>Seu Segundo Cérebro</h1>
@@ -25,6 +21,18 @@ export default function SecondBrain({
           <br />
           Ilumina o próximo passo.
         </p>
+        <div className="brain-domains" aria-hidden="true">
+          <span>Saúde</span>
+          <span>Financeiro</span>
+          <span>Contratos</span>
+          <span>Decisões</span>
+        </div>
+        <div className="brain-cycle" aria-hidden="true">
+          <span className={active ? "is-hot" : ""}>Escuta</span>
+          <span className={active ? "is-hot" : ""}>Contexto</span>
+          <span className={active ? "is-hot" : ""}>Contratos</span>
+          <span className={active ? "is-hot" : ""}>Decisão</span>
+        </div>
         <div className="brain-state" role="status">
           <span />
           {status ||

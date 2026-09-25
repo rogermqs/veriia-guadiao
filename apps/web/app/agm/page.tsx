@@ -11,12 +11,15 @@ import {
   Settings,
   LogOut,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Menu,
   ArrowUpRight,
   Landmark,
   Search,
   X,
 } from "lucide-react";
+import ThemeToggle from "../../components/theme-toggle";
 import Health from "../../components/health";
 import Dashboard from "../../components/dashboard";
 import { request, Drawer, Source, ErrorBox } from "../../components/ui";
@@ -39,6 +42,7 @@ export default function Application() {
     [workspace, setWorkspace] = useState("demo"),
     [page, setPage] = useState("overview"),
     [mobile, setMobile] = useState(false),
+    [sidebarCollapsed, setSidebarCollapsed] = useState(false),
     [source, setSource] = useState<any>(null),
     [error, setError] = useState("");
   useEffect(() => {
@@ -64,12 +68,12 @@ export default function Application() {
   if (!w)
     return (
       <div className="app-loading">
-        <img src="/assets/guardiao.png" alt="Guardião" />
+        <img src="/assets/guardiao-neural-logo.png" alt="Guardião" />
         <p>{error || "Preparando seu espaço de trabalho…"}</p>
       </div>
     );
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${sidebarCollapsed ? "sidebar-collapsed" : ""}`}>
       <a className="skip-link" href="#main">
         Pular para conteúdo
       </a>
@@ -82,9 +86,19 @@ export default function Application() {
       )}
       <aside className={`sidebar ${mobile ? "is-open" : ""}`}>
         <a className="sidebar-brand" href="/">
-          <img src="/assets/guardiao.png" alt="Guardião" />
+          <img src="/assets/guardiao-neural-logo.png" alt="Guardião" />
           <span>SEU SEGUNDO CÉREBRO</span>
         </a>
+        <button
+          className="main-sidebar-toggle"
+          aria-label={sidebarCollapsed ? "Expandir menu lateral" : "Recolher menu lateral"}
+          aria-pressed={sidebarCollapsed}
+          title={sidebarCollapsed ? "Expandir menu lateral" : "Recolher menu lateral"}
+          onClick={() => setSidebarCollapsed((v) => !v)}
+        >
+          {sidebarCollapsed ? <ChevronRight size={17} /> : <ChevronLeft size={17} />}
+          <span>{sidebarCollapsed ? "Expandir" : "Recolher"}</span>
+        </button>
         <div className="sidebar-workspace">
           <div className="workspace-mark">
             <Landmark size={20} />
@@ -123,7 +137,7 @@ export default function Application() {
               onClick={() => navigate("admin")}
             >
               <Settings size={18} />
-              Administração
+              <span>Administração</span>
             </button>
           )}
           <div className="user-row">
@@ -189,6 +203,7 @@ export default function Application() {
             </span>
           </div>
           <div className="topbar-right">
+            <ThemeToggle />
             <span>Guardião — Segundo Cérebro</span>
             <span className="topbar-avatar">{user.name[0]}</span>
           </div>

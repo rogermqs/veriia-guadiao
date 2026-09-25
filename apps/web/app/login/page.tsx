@@ -1,4 +1,6 @@
 "use client";
+import BrainArtwork from "../../components/brain-artwork";
+import ThemeToggle from "../../components/theme-toggle";
 import { useState } from "react";
 import {
   ArrowRight,
@@ -41,8 +43,9 @@ export default function Login() {
     <main className="login">
       <section className="login-story">
         <a href="/" className="login-brand">
-          <img src="/assets/guardiao.png" alt="Guardião" />
+          <img src="/assets/guardiao-neural-logo.png" alt="Guardião" />
         </a>
+        <BrainArtwork className="login-brain" />
         <div className="story-copy">
           <div className="overline">
             <span /> INTELIGÊNCIA PARA A GESTÃO PÚBLICA
@@ -79,16 +82,17 @@ export default function Login() {
         </div>
       </section>
       <section className="login-form-area">
+        <ThemeToggle />
         <a href="/" className="back-site">
           Voltar ao site <ArrowUpRight size={15} />
         </a>
         <div className="login-form-wrap">
-          <div className="app-mark">
+          <div className="login-form-brand">
             <img
-              src="/assets/guardiao-symbol.png"
-              alt=""
-              width="36"
-              height="38"
+              src="/assets/guardiao-neural-logo.png"
+              alt="Guardião"
+              width="102"
+              height="102"
             />
           </div>
           <span className="eyebrow">SEU ESPAÇO DE TRABALHO</span>

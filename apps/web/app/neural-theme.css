@@ -1,0 +1,1056 @@
+:root {
+  --palette-869599-ink: #869599;
+  --palette-cce2da-surface: #cce2da;
+  --palette-365259-ink: #365259;
+  --palette-eef3f0-surface: #eef3f0;
+  --palette-e9efec-surface: #e9efec;
+  --palette-6e8586-ink: #6e8586;
+  --palette-fff1ed-surface: #fff1ed;
+  --palette-953e30-ink: #953e30;
+  --palette-fbf7eb-surface: #fbf7eb;
+  --palette-786137-ink: #786137;
+  --palette-856b34-ink: #856b34;
+  --palette-fbf6e9-surface: #fbf6e9;
+  --palette-eaf2ef-surface: #eaf2ef;
+  --palette-39705f-ink: #39705f;
+  --palette-cde2d7-line: #cde2d7;
+  --palette-edf1ef-surface: #edf1ef;
+  --palette-597068-ink: #597068;
+  --palette-e8f2ec-surface: #e8f2ec;
+  --palette-316d50-ink: #316d50;
+  --palette-e9f0f5-surface: #e9f0f5;
+  --palette-3c6880-ink: #3c6880;
+  --palette-faf3e4-surface: #faf3e4;
+  --palette-8a6d2b-ink: #8a6d2b;
+  --palette-f8ece8-surface: #f8ece8;
+  --palette-9e6152-ink: #9e6152;
+  --palette-727d85-ink: #727d85;
+  --palette-edf0f2-surface: #edf0f2;
+  --palette-fafbf8-surface: #fafbf8;
+  --palette-819397-ink: #819397;
+  --palette-748580-ink: #748580;
+  --palette-eff3ed-surface: #eff3ed;
+  --palette-fdfefa-surface: #fdfefa;
+  --palette-85948c-ink: #85948c;
+  --palette-82908b-ink: #82908b;
+  --palette-89978f-ink: #89978f;
+  --palette-8fa29f-ink: #8fa29f;
+  --palette-79908f-ink: #79908f;
+  --palette-728b8f-ink: #728b8f;
+  --palette-708d88-ink: #708d88;
+  --palette-cfdecc-surface: #cfdecc;
+  --palette-425e4c-ink: #425e4c;
+  --palette-7e9896-ink: #7e9896;
+  --palette-89a1a0-ink: #89a1a0;
+  --palette-fdfefd-surface: #fdfefd;
+  --palette-657d79-ink: #657d79;
+  --palette-91a19b-ink: #91a19b;
+  --palette-8a9e97-ink: #8a9e97;
+  --palette-4a635a-ink: #4a635a;
+  --palette-60776e-ink: #60776e;
+  --palette-84968e-ink: #84968e;
+  --palette-5c776b-ink: #5c776b;
+  --palette-6e8178-ink: #6e8178;
+  --palette-839f93-ink: #839f93;
+  --palette-b29857-ink: #b29857;
+  --palette-5c9880-ink: #5c9880;
+  --palette-7c9da6-ink: #7c9da6;
+  --palette-83938a-ink: #83938a;
+  --palette-92a097-ink: #92a097;
+  --palette-899a91-ink: #899a91;
+  --palette-8da096-ink: #8da096;
+  --palette-5d7669-ink: #5d7669;
+  --palette-4e685b-ink: #4e685b;
+  --palette-7e9689-ink: #7e9689;
+  --palette-5a7a68-ink: #5a7a68;
+  --palette-f2f5ed-surface: #f2f5ed;
+  --palette-65755d-ink: #65755d;
+  --palette-98a698-ink: #98a698;
+  --palette-9ab1a0-ink: #9ab1a0;
+  --palette-8b9d91-ink: #8b9d91;
+  --palette-6f8e79-ink: #6f8e79;
+  --palette-eef3eb-surface: #eef3eb;
+  --palette-648a69-ink: #648a69;
+  --palette-849982-ink: #849982;
+  --palette-798f7e-ink: #798f7e;
+  --palette-78977c-ink: #78977c;
+  --palette-eef3ed-surface: #eef3ed;
+  --palette-425e49-ink: #425e49;
+  --palette-829988-ink: #829988;
+  --palette-f8faf7-surface: #f8faf7;
+  --palette-87998b-ink: #87998b;
+  --palette-5d7361-ink: #5d7361;
+  --palette-3c5743-ink: #3c5743;
+  --palette-fbfdf9-surface: #fbfdf9;
+  --palette-354f3d-ink: #354f3d;
+  --palette-99a999-ink: #99a999;
+  --palette-a3693e-ink: #a3693e;
+  --palette-879f88-ink: #879f88;
+  --palette-658a6c-ink: #658a6c;
+  --palette-eff5ed-surface: #eff5ed;
+  --palette-f8fbf5-surface: #f8fbf5;
+  --palette-6e8c6f-ink: #6e8c6f;
+  --palette-4a6a4d-ink: #4a6a4d;
+  --palette-8b9f8e-ink: #8b9f8e;
+  --palette-f7faf4-surface: #f7faf4;
+  --palette-82a080-ink: #82a080;
+  --palette-8a9e89-ink: #8a9e89;
+  --palette-90a58b-ink: #90a58b;
+  --palette-8a9d8c-ink: #8a9d8c;
+  --palette-f5f8f3-surface: #f5f8f3;
+  --palette-92a289-ink: #92a289;
+  --palette-6c8f72-ink: #6c8f72;
+  --palette-f6f8f4-surface: #f6f8f4;
+  --palette-859980-ink: #859980;
+  --palette-e7eee3-surface: #e7eee3;
+  --palette-476b43-ink: #476b43;
+  --palette-8ca386-ink: #8ca386;
+  --palette-e6eee0-surface: #e6eee0;
+  --palette-547a4a-ink: #547a4a;
+  --palette-8aa081-ink: #8aa081;
+  --palette-64845b-ink: #64845b;
+  --palette-314b32-ink: #314b32;
+  --palette-91a08a-ink: #91a08a;
+  --palette-fcfdf9-surface: #fcfdf9;
+  --palette-6e8a5f-ink: #6e8a5f;
+  --palette-f2f7ed-surface: #f2f7ed;
+  --palette-a4bd95-line: #a4bd95;
+  --palette-4e6844-ink: #4e6844;
+  --palette-8b9d7f-ink: #8b9d7f;
+  --palette-e9efdf-surface: #e9efdf;
+  --palette-506543-ink: #506543;
+  --palette-536647-ink: #536647;
+  --palette-698056-ink: #698056;
+  --palette-9bae8f-ink: #9bae8f;
+  --palette-9baa91-ink: #9baa91;
+  --palette-8c9d7e-ink: #8c9d7e;
+  --palette-9a8b5c-ink: #9a8b5c;
+  --palette-f8f5e9-surface: #f8f5e9;
+  --palette-faf8ed-surface: #faf8ed;
+  --palette-8e8254-ink: #8e8254;
+  --palette-8da476-ink: #8da476;
+  --palette-637369-ink: #637369;
+  --palette-6d7b73-ink: #6d7b73;
+  --palette-708075-ink: #708075;
+  --palette-63756a-ink: #63756a;
+  --palette-94aaa9-ink: #94aaa9;
+  --palette-92aaa7-ink: #92aaa7;
+  --palette-5f784f-ink: #5f784f;
+  --palette-52685d-ink: #52685d;
+  --palette-506247-ink: #506247;
+  --palette-51634d-ink: #51634d;
+  --palette-52675a-ink: #52675a;
+  --palette-ffffff-surface: #fff;
+  --palette-263c33-ink: #263c33;
+  --palette-f7fbf8-surface: #f7fbf8;
+  --palette-627469-ink: #627469;
+  --palette-18724e-ink: #18724e;
+  --palette-176644-ink: #176644;
+  --palette-53685b-ink: #53685b;
+  --palette-506356-ink: #506356;
+  --palette-627167-ink: #627167;
+}
+:root[data-theme="dark"] {
+  --palette-869599-ink: #babdc5;
+  --palette-cce2da-surface: #142136;
+  --palette-365259-ink: #cbd1df;
+  --palette-eef3f0-surface: #142136;
+  --palette-e9efec-surface: #142136;
+  --palette-6e8586-ink: #c0c4cc;
+  --palette-fff1ed-surface: #142136;
+  --palette-953e30-ink: #e1bfb9;
+  --palette-fbf7eb-surface: #142136;
+  --palette-786137-ink: #e2d5bf;
+  --palette-856b34-ink: #e2d6bc;
+  --palette-fbf6e9-surface: #142136;
+  --palette-eaf2ef-surface: #142136;
+  --palette-39705f-ink: #c2e0d7;
+  --palette-cde2d7-line: #2f3851;
+  --palette-edf1ef-surface: #142136;
+  --palette-597068-ink: #c7cad2;
+  --palette-e8f2ec-surface: #142136;
+  --palette-316d50-ink: #c2e4d3;
+  --palette-e9f0f5-surface: #142136;
+  --palette-3c6880-ink: #bdd4e0;
+  --palette-faf3e4-surface: #142136;
+  --palette-8a6d2b-ink: #e2d7bc;
+  --palette-f8ece8-surface: #142136;
+  --palette-9e6152-ink: #d8bcb5;
+  --palette-727d85-ink: #c1c4ca;
+  --palette-edf0f2-surface: #142136;
+  --palette-fafbf8-surface: #142136;
+  --palette-819397-ink: #bbbec7;
+  --palette-748580-ink: #c1c4c9;
+  --palette-eff3ed-surface: #142136;
+  --palette-fdfefa-surface: #142136;
+  --palette-85948c-ink: #bcbfc5;
+  --palette-82908b-ink: #bec0c5;
+  --palette-89978f-ink: #bbbec3;
+  --palette-8fa29f-ink: #b7bac3;
+  --palette-79908f-ink: #bdc0c8;
+  --palette-728b8f-ink: #bdc1cb;
+  --palette-708d88-ink: #bec2cb;
+  --palette-cfdecc-surface: #142136;
+  --palette-425e4c-ink: #cbcfda;
+  --palette-7e9896-ink: #babec8;
+  --palette-89a1a0-ink: #b7bbc5;
+  --palette-fdfefd-surface: #142136;
+  --palette-657d79-ink: #c3c6ce;
+  --palette-91a19b-ink: #b8bac2;
+  --palette-8a9e97-ink: #b8bcc4;
+  --palette-4a635a-ink: #caced7;
+  --palette-60776e-ink: #c5c8d0;
+  --palette-84968e-ink: #bbbec5;
+  --palette-5c776b-ink: #c4c8d2;
+  --palette-6e8178-ink: #c2c5cb;
+  --palette-839f93-ink: #b7bcc7;
+  --palette-b29857-ink: #d9ccad;
+  --palette-5c9880-ink: #b8c0d4;
+  --palette-7c9da6-ink: #b3bacb;
+  --palette-83938a-ink: #bdbfc5;
+  --palette-92a097-ink: #b8bbc1;
+  --palette-899a91-ink: #babdc4;
+  --palette-8da096-ink: #b7bbc3;
+  --palette-5d7669-ink: #c5c8d1;
+  --palette-4e685b-ink: #c8ccd6;
+  --palette-7e9689-ink: #bbbec8;
+  --palette-5a7a68-ink: #c3c7d3;
+  --palette-f2f5ed-surface: #142136;
+  --palette-65755d-ink: #c5c8d1;
+  --palette-98a698-ink: #b6b9c0;
+  --palette-9ab1a0-ink: #b0b5c2;
+  --palette-8b9d91-ink: #b9bcc4;
+  --palette-6f8e79-ink: #bec2cc;
+  --palette-eef3eb-surface: #142136;
+  --palette-648a69-ink: #bec3d0;
+  --palette-849982-ink: #babdc7;
+  --palette-798f7e-ink: #bec1c8;
+  --palette-78977c-ink: #babeca;
+  --palette-eef3ed-surface: #142136;
+  --palette-425e49-ink: #cbcfda;
+  --palette-829988-ink: #babdc7;
+  --palette-f8faf7-surface: #142136;
+  --palette-87998b-ink: #babdc5;
+  --palette-5d7361-ink: #c6c9d1;
+  --palette-3c5743-ink: #cdd1dc;
+  --palette-fbfdf9-surface: #142136;
+  --palette-354f3d-ink: #cfd3df;
+  --palette-99a999-ink: #b4b8c0;
+  --palette-a3693e-ink: #dfc6b3;
+  --palette-879f88-ink: #b7bbc6;
+  --palette-658a6c-ink: #bec3cf;
+  --palette-eff5ed-surface: #142136;
+  --palette-f8fbf5-surface: #142136;
+  --palette-6e8c6f-ink: #bec2cc;
+  --palette-4a6a4d-ink: #c7ccd8;
+  --palette-8b9f8e-ink: #b8bbc4;
+  --palette-f7faf4-surface: #142136;
+  --palette-82a080-ink: #b6bbc9;
+  --palette-8a9e89-ink: #b8bcc5;
+  --palette-90a58b-ink: #b5b9c5;
+  --palette-8a9d8c-ink: #b9bcc4;
+  --palette-f5f8f3-surface: #142136;
+  --palette-92a289-ink: #b6bac5;
+  --palette-6c8f72-ink: #bdc1cd;
+  --palette-f6f8f4-surface: #142136;
+  --palette-859980-ink: #babdc7;
+  --palette-e7eee3-surface: #142136;
+  --palette-476b43-ink: #c6ccdb;
+  --palette-8ca386-ink: #b5bac7;
+  --palette-e6eee0-surface: #142136;
+  --palette-547a4a-ink: #c1c8d9;
+  --palette-8aa081-ink: #b6bbc8;
+  --palette-64845b-ink: #bfc5d3;
+  --palette-314b32-ink: #d0d4e0;
+  --palette-91a08a-ink: #b7bbc5;
+  --palette-fcfdf9-surface: #142136;
+  --palette-6e8a5f-ink: #bdc3d2;
+  --palette-f2f7ed-surface: #142136;
+  --palette-a4bd95-line: #31394f;
+  --palette-4e6844-ink: #c7cdda;
+  --palette-8b9d7f-ink: #b8bcc8;
+  --palette-e9efdf-surface: #142136;
+  --palette-506543-ink: #c8cddb;
+  --palette-536647-ink: #c8cdd9;
+  --palette-698056-ink: #c0c6d5;
+  --palette-9bae8f-ink: #b0b6c6;
+  --palette-9baa91-ink: #b3b8c4;
+  --palette-8c9d7e-ink: #b8bcc9;
+  --palette-9a8b5c-ink: #b7bfd4;
+  --palette-f8f5e9-surface: #142136;
+  --palette-faf8ed-surface: #142136;
+  --palette-8e8254-ink: #bbc3d7;
+  --palette-8da476-ink: #b4bbcd;
+  --palette-637369-ink: #c7c9ce;
+  --palette-6d7b73-ink: #c4c6cb;
+  --palette-708075-ink: #c3c5ca;
+  --palette-63756a-ink: #c6c8cf;
+  --palette-94aaa9-ink: #b3b7c3;
+  --palette-92aaa7-ink: #b3b8c4;
+  --palette-5f784f-ink: #c2c8d7;
+  --palette-52685d-ink: #c9ccd4;
+  --palette-506247-ink: #caced9;
+  --palette-51634d-ink: #caced6;
+  --palette-52675a-ink: #c9ccd4;
+  --palette-ffffff-surface: #142136;
+  --palette-263c33-ink: #d4d8e4;
+  --palette-f7fbf8-surface: #142136;
+  --palette-627469-ink: #c6c9cf;
+  --palette-18724e-ink: #c5e6d9;
+  --palette-176644-ink: #c8e8da;
+  --palette-53685b-ink: #c9ccd4;
+  --palette-506356-ink: #cbced5;
+  --palette-627167-ink: #c7c9cf;
+}
+/* Shared Second Brain identity, adapted from the team's neural mesh. */
+:root {
+  color-scheme: light;
+  --paper: #f1f4fa;
+  --surface: #ffffff;
+  --ink: #243650;
+  --muted: #63738b;
+  --line: #dae2ef;
+  --green: #465bce;
+  --neural-panel: #e9effc;
+  --neural-accent: #475dcc;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #080f1d;
+  --surface: #101c2e;
+  --ink: #e0e9fa;
+  --muted: #9daec7;
+  --line: #26354d;
+  --green: #5069db;
+  --navy: #122139;
+  --navy-deep: #080f1d;
+  --neural-panel: #101c32;
+  --neural-accent: #a7b8ff;
+}
+.theme-toggle {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--ink);
+  white-space: nowrap;
+}
+.theme-toggle:hover {
+  border-color: var(--neural-accent);
+}
+.login-form-area > .theme-toggle {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.login,
+.login-form-area {
+  background: var(--paper);
+}
+.login-story {
+  background: #0a1426;
+}
+.login-story .story-copy {
+  padding: 24px 0 35px;
+  margin: 0;
+}
+.login-story .story-copy h1 {
+  font-size: clamp(27px, 2.5vw, 42px);
+}
+.login-story .story-copy h1 em {
+  color: #a7b8ff;
+}
+.login-story .story-features {
+  margin-top: 20px;
+}
+.login-story .story-bottom {
+  margin-top: auto;
+}
+.neural-artwork {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 640 / 530;
+  pointer-events: none;
+}
+.neural-artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 13px #5c7be133);
+}
+.neural-signal {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffb679;
+  box-shadow: 0 0 16px 4px #dd92525c;
+}
+.signal-one {
+  top: 31%;
+  left: 35%;
+}
+.signal-two {
+  top: 43%;
+  left: 72%;
+}
+.signal-three {
+  top: 64%;
+  left: 46%;
+}
+.neural-active img {
+  animation: neural-thinking 2s ease-in-out infinite;
+}
+.neural-active .neural-signal {
+  animation: neural-pulse 1.4s ease-in-out infinite;
+}
+.neural-active .signal-two {
+  animation-delay: 0.45s;
+}
+.neural-active .signal-three {
+  animation-delay: 0.9s;
+}
+@keyframes neural-thinking {
+  50% {
+    filter: drop-shadow(0 0 22px #6e99ffbb) brightness(1.3);
+    transform: rotateY(12deg) rotateZ(2deg);
+  }
+}
+@keyframes neural-pulse {
+  50% {
+    opacity: 0.3;
+    transform: scale(2.3);
+  }
+}
+.login-brain {
+  width: min(100%, 400px);
+  margin: -24px auto -12px;
+}
+.brain-overview {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 80% 45%, #788dea18, transparent 65%),
+    var(--surface);
+}
+.brain-overview-copy {
+  padding: 32px;
+}
+.brain-overview-copy .eyebrow {
+  font-size: 9px;
+  color: var(--neural-accent);
+  letter-spacing: 1.8px;
+}
+.brain-overview-copy h2 {
+  font-size: clamp(24px, 2.5vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 14px 0;
+  font-weight: 550;
+}
+.brain-overview-copy p {
+  color: var(--muted);
+  max-width: 330px;
+  font-size: 13px;
+  margin-bottom: 21px;
+}
+.brain-overview-copy > small {
+  display: block;
+  color: var(--muted);
+  margin-top: 15px;
+  font-size: 10px;
+}
+.brain-map {
+  position: relative;
+  min-height: 330px;
+  display: grid;
+  place-items: center;
+  background-image: radial-gradient(#7586c324 0.8px, transparent 0.8px);
+  background-size: 20px 20px;
+}
+.brain-map > .neural-artwork {
+  width: 85%;
+  max-width: 410px;
+}
+.brain-map-caption {
+  position: absolute;
+  bottom: 14px;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: var(--muted);
+}
+.brain-area {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-align: left;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 9px;
+  box-shadow: 0 5px 18px #060e2210;
+}
+.brain-area:hover {
+  border-color: var(--neural-accent);
+  transform: translateY(-2px);
+}
+.brain-area strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+}
+.brain-area small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  margin-top: 3px;
+}
+.area-dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #8799f7;
+  box-shadow: 0 0 8px #8799f755;
+}
+.brain-area:nth-child(even) .area-dot {
+  background: #e7a364;
+}
+.area-0 {
+  left: 3%;
+  top: 17%;
+}
+.area-1 {
+  right: 5%;
+  top: 9%;
+}
+.area-2 {
+  right: 2%;
+  top: 47%;
+}
+.area-3 {
+  left: 1%;
+  top: 57%;
+}
+.area-4 {
+  right: 14%;
+  bottom: 12%;
+}
+.second-brain-console {
+  background: var(--neural-panel);
+  border-bottom-color: var(--line);
+  color: var(--ink);
+  min-height: 104px;
+  justify-content: flex-start;
+  padding: 8px 28px;
+  gap: 20px;
+}
+.console-neural-art {
+  width: 126px;
+  height: 92px;
+  flex-shrink: 0;
+}
+.console-brain-copy h1 {
+  color: var(--ink);
+  font-size: 19px;
+  margin: 4px 0;
+}
+.brain-wordmark {
+  color: var(--neural-accent);
+  font-size: 9px;
+}
+.brain-state {
+  color: var(--muted);
+  margin-top: 4px;
+}
+.brain-state > span {
+  background: #8194ec;
+}
+.brain-domains {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 7px;
+}
+.brain-domains span {
+  border: 1px solid color-mix(in srgb, var(--neural-accent) 38%, transparent);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.5px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+.brain-cycle {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.brain-cycle::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--neural-accent) 38%, transparent),
+    transparent
+  );
+}
+.brain-cycle span {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.brain-cycle span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 1px solid color-mix(in srgb, var(--neural-accent) 58%, transparent);
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--neural-panel);
+}
+.brain-cycle span.is-hot {
+  color: var(--ink);
+}
+.brain-cycle span.is-hot::before {
+  background: #f2c678;
+  border-color: #f2c678;
+  box-shadow:
+    0 0 0 3px var(--neural-panel),
+    0 0 18px #f2c678aa;
+  animation: cycle-node 1.8s ease-in-out infinite;
+}
+.brain-cycle span.is-hot:nth-child(2)::before {
+  animation-delay: 0.2s;
+}
+.brain-cycle span.is-hot:nth-child(3)::before {
+  animation-delay: 0.4s;
+}
+.brain-cycle span.is-hot:nth-child(4)::before {
+  animation-delay: 0.6s;
+}
+.second-brain-console.is-thinking {
+  background:
+    radial-gradient(ellipse at 12% 50%, #6f9dff35 0%, transparent 45%),
+    radial-gradient(ellipse at 68% 50%, #dcb86f24 0%, transparent 52%),
+    var(--neural-panel);
+  box-shadow:
+    inset 0 -1px 0 color-mix(in srgb, var(--neural-accent) 45%, transparent),
+    0 0 34px #6d91ff28;
+}
+.second-brain-console.is-thinking::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    color-mix(in srgb, var(--neural-accent) 26%, transparent) 46%,
+    transparent 70%
+  );
+  opacity: 0.65;
+  transform: translateX(-100%);
+  animation: neural-scan 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+.second-brain-console.is-thinking .console-neural-art {
+  animation: console-brain-orbit 7.5s linear infinite;
+}
+.second-brain-console.is-thinking .console-neural-art img {
+  filter: drop-shadow(0 0 34px #7fa5ffcc) brightness(1.38) saturate(1.45);
+}
+.second-brain-console.is-thinking .brain-domains span {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--neural-accent) 72%, transparent);
+  background: color-mix(in srgb, var(--neural-accent) 14%, transparent);
+  animation: domain-ignite 1.8s ease-in-out infinite;
+}
+.second-brain-console.is-thinking .brain-domains span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.second-brain-console.is-thinking .brain-domains span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.second-brain-console.is-thinking .brain-domains span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.neural-progress {
+  align-items: flex-start;
+  border: 1px solid color-mix(in srgb, var(--neural-accent) 36%, transparent);
+  border-radius: 12px;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--neural-accent) 13%, transparent), transparent),
+    var(--surface);
+  box-shadow: 0 16px 45px color-mix(in srgb, var(--neural-accent) 14%, transparent);
+  color: var(--ink);
+  padding: 13px 15px;
+}
+.neural-progress div {
+  display: grid;
+  gap: 3px;
+}
+.neural-progress strong {
+  color: var(--neural-accent);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.neural-progress span:not(.pulse-dot) {
+  color: var(--muted);
+}
+@keyframes neural-scan {
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes console-brain-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes domain-ignite {
+  50% {
+    box-shadow: 0 0 18px color-mix(in srgb, var(--neural-accent) 44%, transparent);
+  }
+}
+@keyframes cycle-node {
+  50% {
+    transform: scale(1.45);
+  }
+}
+.welcome-brain {
+  width: 190px;
+  margin: -10px auto -5px;
+}
+.chat-intelligence {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}
+.intelligence-toolbar, .specialist-switch, .connection-nodes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.intelligence-toolbar { justify-content: space-between; }
+.specialist-switch { flex-wrap: wrap; }
+.specialist-switch button, .brain-expand, .brain-dialog-close {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.specialist-switch button[aria-pressed="true"] {
+  border-color: var(--neural-accent);
+  background: var(--neural-panel);
+  color: var(--neural-accent);
+}
+.chat-intelligence button:disabled { opacity: .55; cursor: default; }
+.chat-intelligence button:focus-visible, .intelligence-details summary:focus-visible {
+  outline: 2px solid var(--neural-accent);
+  outline-offset: 3px;
+}
+.intelligence-details summary { cursor: pointer; color: var(--muted); font-size: 12px; padding-top: 10px; }
+.intelligence-detail-body { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 18px 0 8px; }
+.connection-panel p, .guided-demo p, .guided-demo small { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.guided-demo strong { color: var(--ink); }
+.guided-demo small { display: block; margin-top: 8px; }
+.connection-nodes { flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+.connection-nodes span { border: 1px solid var(--line); border-radius: 20px; padding: 6px 10px; font-size: 12px; color: var(--ink); background: var(--neural-panel); }
+.connection-nodes span::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; background: var(--neural-accent); box-shadow: 0 0 8px var(--neural-accent); }
+.expanded-brain-dialog {
+  margin: auto;
+  width: min(680px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--ink);
+  text-align: center;
+}
+.expanded-brain-dialog::backdrop { background: #030918bb; backdrop-filter: blur(8px); }
+.brain-dialog-close { display: block; margin-left: auto; }
+.expanded-brain-dialog h2 { font-size: clamp(20px, 4vw, 28px); margin-top: 12px; }
+.expanded-brain-art { width: min(440px, 100%); margin: auto; }
+.expanded-brain-dialog .connection-nodes { justify-content: center; }
+.analysis-steps { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 8px 0 0; margin: 0; font-size: 11px; color: var(--muted); }
+.analysis-steps li { border-bottom: 2px solid var(--line); padding-bottom: 4px; }
+.analysis-steps [aria-current="step"] { color: var(--neural-accent); border-color: var(--neural-accent); font-weight: 700; }
+@media (max-width: 600px) {
+  .specialist-switch { gap: 4px; }
+  .specialist-switch button { font-size: 11px; padding: 7px; }
+  .intelligence-detail-body { grid-template-columns: 1fr; }
+  .expanded-brain-dialog { padding: 18px; }
+}
+.chat-welcome {
+  margin-top: 0;
+}
+.chat-welcome h2 {
+  color: var(--ink);
+}
+.chat-welcome > p,
+.chat-memory-note,
+.chat-footnote {
+  color: var(--muted);
+}
+.sidebar {
+  background: #0b1426;
+  border-right: 1px solid #26334b;
+}
+.sidebar nav button.selected,
+.nav-admin.selected {
+  background: #273355;
+  color: #e0e8ff;
+}
+.sidebar-brand > span {
+  color: #a8b6d6;
+}
+.conversation-sidebar {
+  background: var(--paper);
+}
+.conversation-link {
+  color: var(--muted);
+}
+.conversation-link.active {
+  background: var(--neural-panel);
+  color: var(--neural-accent);
+}
+.suggestions button {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.suggestions button:hover {
+  background: var(--neural-panel);
+}
+.suggestions button small {
+  color: var(--muted);
+}
+.btn.primary:hover {
+  background: #3d50bc;
+}
+.topbar-right {
+  gap: 12px;
+}
+.topbar-right .theme-toggle span {
+  display: inline;
+}
+:root[data-theme="dark"] .recharts-cartesian-grid line {
+  stroke: var(--line);
+}
+:root[data-theme="dark"] .recharts-text {
+  fill: var(--muted);
+}
+:root[data-theme="dark"] .recharts-default-tooltip {
+  background: var(--surface) !important;
+  border-color: var(--line) !important;
+}
+@media (max-width: 1100px) {
+  .brain-overview-copy {
+    padding: 24px;
+  }
+  .brain-area {
+    padding: 8px;
+  }
+  .brain-area small {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .brain-overview {
+    grid-template-columns: 1fr;
+  }
+  .brain-overview-copy {
+    padding: 24px 24px 4px;
+  }
+  .brain-map {
+    min-height: 275px;
+  }
+  .brain-map > .neural-artwork {
+    max-width: 320px;
+  }
+  .theme-toggle span {
+    display: none !important;
+  }
+  .theme-toggle {
+    padding: 8px;
+  }
+  .second-brain-console {
+    min-height: 92px;
+    padding: 6px 14px;
+    gap: 10px;
+  }
+  .console-neural-art {
+    width: 82px;
+    height: 62px;
+  }
+  .console-brain-copy h1 {
+    font-size: 17px;
+    margin: 2px 0;
+  }
+  .brain-domains {
+    gap: 4px;
+    margin-top: 5px;
+  }
+  .brain-domains span {
+    font-size: 7px;
+    letter-spacing: 0.2px;
+    padding: 3px 5px;
+  }
+  .brain-cycle {
+    display: none;
+  }
+  .brain-state {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+  .welcome-brain {
+    width: 140px;
+  }
+  .login-form-area > .theme-toggle {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .neural-artwork *,
+  .brain-area {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.login-form-area {
+  position: relative;
+}
+input,
+select,
+textarea {
+  border-color: var(--line);
+}
+:root[data-theme="dark"] .login-form-wrap input {
+  background: var(--surface);
+}
+:root[data-theme="light"] .neural-artwork img {
+  filter: saturate(1.8) brightness(0.68) drop-shadow(0 0 14px #5364c82a);
+}
+:root[data-theme="light"] .login-brain img {
+  filter: drop-shadow(0 0 13px #5c7be133);
+}
+.sidebar-brand img {
+  width: 100px;
+  height: 95px;
+  object-fit: contain;
+}
+:root[data-theme="dark"] .voice-listening {
+  background: #192f2d !important;
+}
+.brain-map-connections {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.brain-map-connections path {
+  fill: none;
+  stroke: #859bed;
+  stroke-width: 1;
+  opacity: 0.45;
+  stroke-dasharray: 3 5;
+}
+@media (max-width: 700px) {
+  .topbar-right {
+    display: flex;
+    margin-left: auto;
+  }
+  .topbar-right > span {
+    display: none;
+  }
+  .topbar-context {
+    min-width: 0;
+    gap: 7px;
+  }
+  .topbar-context select {
+    max-width: 145px;
+  }
+  .topbar {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+  .chat-layout {
+    height: calc(100dvh - 60px);
+    min-height: 0;
+  }
+  .chat-main {
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+  }
+  .chat-messages {
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+    overflow-y: auto;
+  }
+  .composer-area {
+    flex-shrink: 0;
+  }
+  .welcome-brain {
+    width: 120px;
+  }
+  .login-brain {
+    width: 210px;
+    margin: -45px 0 0 auto;
+  }
+  .login-story .story-copy {
+    padding-bottom: 0;
+  }
+}
+
+.login-form-brand {
+  margin-bottom: 24px;
+}
+.login-form-brand img {
+  display: block;
+  width: 102px;
+  height: 102px;
+  object-fit: contain;
+}

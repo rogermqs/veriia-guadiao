@@ -5,6 +5,7 @@ import {
   Volume2,
   VolumeX,
   HeartPulse,
+  Landmark,
   Plus,
   ArrowUp,
   ArrowUpRight,
@@ -12,6 +13,7 @@ import {
   MessagesSquare,
   BookOpen,
   BarChart3,
+  FileSignature,
   ClipboardList,
   StopCircle,
   Info,
@@ -21,7 +23,12 @@ import {
 } from "lucide-react";
 import { request, download, ErrorBox, ResultTable } from "./ui";
 import { useVoice } from "./use-voice";
+import BrainArtwork from "./brain-artwork";
 import SecondBrain from "./second-brain";
+import ChatIntelligence, {
+  AnalysisSteps,
+  specialists,
+} from "./chat-intelligence";
 export default function Chat({ w, onSource }: any) {
   const base = `/workspaces/${w.id}`;
   const [conversations, setConversations] = useState<any[]>([]),
@@ -36,9 +43,23 @@ export default function Chat({ w, onSource }: any) {
     [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const voice = useVoice(setMessage);
   const [autoVoice, setAutoVoice] = useState(false);
+  const [specialist, setSpecialist] = useState("gestao");
+  const selectedSpecialist =
+    specialists.find((s) => s.id === specialist) || specialists[0];
+  const focusPrefix =
+    specialist === "gestao"
+      ? ""
+      : `Foco de análise: ${selectedSpecialist.title}.\n\n`;
   const autoVoiceRef = useRef(false);
   autoVoiceRef.current = autoVoice;
   const brainThinking = busy || voice.speaking;
+  const brainStatus = voice.listening
+    ? "Ouvindo você…"
+    : busy
+      ? progress || "Cruzando saúde, financeiro, contratos e memória…"
+      : voice.speaking
+        ? "Falando com você…"
+        : undefined;
   const viewEpoch = useRef(0);
   const stream = useRef<EventSource | null>(null),
     active = useRef<string | null>(null),
@@ -124,10 +145,16 @@ export default function Chat({ w, onSource }: any) {
   async function send(e: React.FormEvent) {
     e.preventDefault();
     if (!message.trim() || busy || voice.listening) return;
+    const text = focusPrefix + message.trim();
+    if (text.length > 8000) {
+      setError(
+        "Reduza a pergunta para incluir o foco de análise no limite de 8.000 caracteres.",
+      );
+      return;
+    }
     voice.stop();
     setError("");
     setBusy(true);
-    const text = message;
     try {
       let conv = current;
       if (!conv) {
@@ -166,7 +193,11 @@ export default function Chat({ w, onSource }: any) {
           title={sidebarCollapsed ? "Abrir sidebar" : "Minimizar sidebar"}
           aria-label={sidebarCollapsed ? "Abrir sidebar" : "Minimizar sidebar"}
         >
-          {sidebarCollapsed ? <ChevronRight size={17} /> : <ChevronLeft size={17} />}
+          {sidebarCollapsed ? (
+            <ChevronRight size={17} />
+          ) : (
+            <ChevronLeft size={17} />
+          )}
           <span className="sidebar-action-label">
             {sidebarCollapsed ? "Abrir sidebar" : "Minimizar"}
           </span>
@@ -186,6 +217,7 @@ export default function Chat({ w, onSource }: any) {
             setError("");
             setBusy(false);
             setProgress("");
+            setSpecialist("gestao");
           }}
         >
           <Plus size={17} />
@@ -215,26 +247,23 @@ export default function Chat({ w, onSource }: any) {
         </div>
       </aside>
       <section className="chat-main">
-        <SecondBrain
-          active={brainThinking}
-          status={
-            voice.listening
-              ? "Ouvindo você…"
-              : busy
-                ? "Consultando..."
-                : voice.speaking
-                ? "Falando com você…"
-                : undefined
-          }
-        />
+        <SecondBrain active={brainThinking} status={brainStatus} />
         <div className="chat-messages">
+          <ChatIntelligence
+            selected={specialist}
+            onSelect={setSpecialist}
+            onPrompt={setMessage}
+            busy={busy || voice.listening}
+            status={brainStatus}
+          />
           {!turns.length ? (
             <div className="chat-welcome">
+              <BrainArtwork className="welcome-brain" />
               <span className="eyebrow">CONTEXTO PARA DECIDIR</span>
               <h2>O que vamos entender hoje?</h2>
               <p>
-                Explore os registros, consulte decisões anteriores
-                <br />e acompanhe os próximos passos da gestão.
+                Consulte saúde, financeiro, contratos e decisões anteriores.
+                <br />O Guardião cruza dados, memória e fontes verificáveis.
               </p>
               <div className="suggestions">
                 {[
@@ -247,6 +276,16 @@ export default function Chat({ w, onSource }: any) {
                         ],
                       ]
                     : []),
+                  [
+                    Landmark,
+                    "Analisar financeiro",
+                    "Quais áreas concentram mais demandas pendentes e onde priorizar orçamento?",
+                  ],
+                  [
+                    FileSignature,
+                    "Revisar contratos",
+                    "Quais compromissos e decisões podem impactar contratos ou fornecedores?",
+                  ],
                   [
                     BarChart3,
                     "Entender as demandas",
@@ -346,10 +385,17 @@ export default function Chat({ w, onSource }: any) {
             ))
           )}
           {busy && (
-            <p className="chat-progress">
+            <div className="chat-progress neural-progress" role="status">
               <span className="pulse-dot" />
-              {progress || "Processando consulta…"}
-            </p>
+              <div>
+                <strong>Segundo Cérebro em consulta</strong>
+                <span>
+                  {progress ||
+                    "Cruzando saúde, financeiro, contratos e memória institucional…"}
+                </span>
+                <AnalysisSteps progress={progress} />
+              </div>
+            </div>
           )}
           <div ref={bottom} />
         </div>
@@ -408,7 +454,7 @@ export default function Chat({ w, onSource }: any) {
               aria-label="Mensagem para o assistente"
               placeholder="Pergunte sobre os dados e a gestão do município…"
               disabled={voice.listening}
-              maxLength={8000}
+              maxLength={8000 - focusPrefix.length}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               onKeyDown={(e) => {
@@ -421,7 +467,9 @@ export default function Chat({ w, onSource }: any) {
             <div className="composer-bottom">
               <span>
                 <BookOpen size={14} />
-                Contexto do espaço atual
+                {specialist === "gestao"
+                  ? "Contexto do espaço atual"
+                  : `Foco: ${selectedSpecialist.title} · incluído na pergunta`}
               </span>
               {busy ? (
                 <button

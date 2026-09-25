@@ -5,6 +5,8 @@ for (const folder of ["apps/web/public", "public-site"]) {
     "index.html",
     "styles.css",
     "app.js",
+    "theme.js",
+    "neural-interaction.js",
     "config.js",
     "404.html",
     "_headers",

@@ -79,3 +79,233 @@ dialog{border:1px solid #d7b87854;border-radius:16px;padding:0;background:var(--
 @keyframes connect-neuron{to{stroke-dashoffset:0}}@keyframes light-neuron{to{opacity:1}}@keyframes brain-complete{to{opacity:1;filter:drop-shadow(0 0 13px #e1b55c55)}}@keyframes connecting-done{to{opacity:0}}
 @media(max-width:759px){.second-brain-hero{min-height:400px;margin-top:15px}.hero-brain-svg{width:108%;margin:0 -4%}.brain-art-heading{margin-top:0;font-size:14px}.brain-art-heading img{width:34px;height:38px}.brain-art-caption strong{font-size:27px}.brain-connection text{font-size:14px}.brain-art-caption{margin-top:-6px}.hero-bottom .ecosystem-caption{min-width:0}.hero-bottom .ecosystem-product{min-width:0}}
 @media(prefers-reduced-motion:reduce){.second-brain-hero *{animation:none!important}.second-brain-hero .brain-tissue,.second-brain-hero .brain-neuron,.signal-end,.brain-art-caption .brain-connected{opacity:1}.signal-pulse{stroke-dashoffset:0}.brain-art-caption .brain-connecting{opacity:0}}
+
+/* Neural identity adapted from Guardiao-Projeto. */
+.site-theme-toggle{padding:8px 12px;border:1px solid var(--rule);background:transparent;border-radius:8px;font-size:12px;white-space:nowrap;min-height:38px}
+.neural-hero-image{width:100%;height:auto;filter:drop-shadow(0 0 22px #788aff44)}
+.second-brain-hero{background:radial-gradient(ellipse at center,#28376c66,transparent 70%)}
+.neural-hero-areas{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;position:relative;margin:-35px 12px 28px}
+.neural-hero-areas span{padding:5px 10px;border:1px solid #8299ef44;border-radius:20px;font-size:10px;background:#101c32;color:#c7d6ff}
+:root[data-theme="light"]{color-scheme:light;--navy:#eff3fa;--navy-deep:#e4ebf6;--navy-light:#e0e8f5;--white:#243651;--muted:#53647b;--rule:#cdd7e7;--gold:#705124;--gold-bright:#77542c;--teal:#3b638b}
+:root[data-theme="light"] .site-header{background:#f6f8fcf5}
+:root[data-theme="light"] .hero{background:radial-gradient(ellipse at 85% 40%,#dce5ff,transparent 60%),#f1f5fc}
+:root[data-theme="light"] .hero h1,:root[data-theme="light"] .hero p,:root[data-theme="light"] .brain-art-caption strong{color:#243651}
+:root[data-theme="light"] .brain-art-caption span,:root[data-theme="light"] .brain-art-heading{color:#53647b}
+:root[data-theme="light"] .neural-hero-image{filter:drop-shadow(0 0 12px #4f6dd255) saturate(1.5)}
+:root[data-theme="dark"]{color-scheme:dark}
+
+/* Readable secondary copy throughout the light marketing page. */
+:root[data-theme="light"] .main-navigation{color:#53647b}
+:root[data-theme="light"] .hero h1{color:#53647b}
+:root[data-theme="light"] .hero-description{color:#53647b}
+:root[data-theme="light"] .hero-actions>.text-link{color:#53647b}
+:root[data-theme="light"] .hero-assurance{color:#53647b}
+:root[data-theme="light"] .core-label{color:#53647b}
+:root[data-theme="light"] .orbit-card small{color:#53647b}
+:root[data-theme="light"] .art-coordinate{color:#53647b}
+:root[data-theme="light"] .art-coordinate b{color:#53647b}
+:root[data-theme="light"] .orbit-label{color:#53647b}
+:root[data-theme="light"] .ecosystem-caption{color:#53647b}
+:root[data-theme="light"] .ecosystem-caption strong{color:#53647b}
+:root[data-theme="light"] .ecosystem-product>span{color:#53647b}
+:root[data-theme="light"] .scroll-cue{color:#53647b}
+:root[data-theme="light"] .method .section-intro{color:#53647b}
+:root[data-theme="light"] .tab-number{color:#53647b}
+:root[data-theme="light"] .product-tab.active small{color:#53647b}
+:root[data-theme="light"] .product-audience{color:#53647b}
+:root[data-theme="light"] .product-copy>p{color:#53647b}
+:root[data-theme="light"] .product-benefits>span{color:#53647b}
+:root[data-theme="light"] .visual-header{color:#53647b}
+:root[data-theme="light"] .visual-header>.icon{color:#53647b}
+:root[data-theme="light"] .decision-sources>span{color:#53647b}
+:root[data-theme="light"] .mini-label{color:#53647b}
+:root[data-theme="light"] .decision-core small{color:#53647b}
+:root[data-theme="light"] .decision-outcomes>span{color:#53647b}
+:root[data-theme="light"] .module-explorer>.mini-label{color:#53647b}
+:root[data-theme="light"] .module-buttons button{color:#53647b}
+:root[data-theme="light"] .module-buttons button.active{color:#53647b}
+:root[data-theme="light"] .module-description{color:#53647b}
+:root[data-theme="light"] .module-description strong{color:#53647b}
+:root[data-theme="light"] .visual-caption{color:#53647b}
+:root[data-theme="light"] .hub-center>span{color:#53647b}
+:root[data-theme="light"] .ky-grid strong{color:#53647b}
+:root[data-theme="light"] .ky-grid span{color:#53647b}
+:root[data-theme="light"] .ky-description{color:#53647b}
+:root[data-theme="light"] .step-top{color:#53647b}
+:root[data-theme="light"] .step-top>.icon{color:#53647b}
+:root[data-theme="light"] .method-step strong{color:#53647b}
+:root[data-theme="light"] .method-step small{color:#53647b}
+:root[data-theme="light"] .method-detail p{color:#53647b}
+:root[data-theme="light"] .method-loop{color:#53647b}
+:root[data-theme="light"] .method-loop>.icon{color:#53647b}
+:root[data-theme="light"] .governance-copy>p.governance-support{color:#53647b}
+:root[data-theme="light"] .governance-signature{color:#53647b}
+:root[data-theme="light"] .item-number{color:#53647b}
+:root[data-theme="light"] .governance-note{color:#53647b}
+:root[data-theme="light"] .governance-note>p{color:#53647b}
+:root[data-theme="light"] .about-statement>p:not(.eyebrow){color:#53647b}
+:root[data-theme="light"] .about-quote{color:#53647b}
+:root[data-theme="light"] .about-bottom>span{color:#53647b}
+:root[data-theme="light"] .contact-copy>p:not(.eyebrow){color:#53647b}
+:root[data-theme="light"] .contact-process>span{color:#53647b}
+:root[data-theme="light"] .contact-brand span{color:#53647b}
+:root[data-theme="light"] .form-intro{color:#53647b}
+:root[data-theme="light"] .form-field label{color:#53647b}
+:root[data-theme="light"] .form-field input::placeholder,:root[data-theme="light"] .form-context textarea::placeholder{color:#53647b}
+:root[data-theme="light"] .select-wrap>.icon{color:#53647b}
+:root[data-theme="light"] .select-wrap select:invalid{color:#53647b}
+:root[data-theme="light"] .field-error{color:#53647b}
+:root[data-theme="light"] .form-context summary{color:#53647b}
+:root[data-theme="light"] .form-context summary>span{color:#53647b}
+:root[data-theme="light"] .consent-field>label{color:#53647b}
+:root[data-theme="light"] .form-privacy{color:#53647b}
+:root[data-theme="light"] .prototype-note{color:#53647b}
+:root[data-theme="light"] .form-feedback{color:#53647b}
+:root[data-theme="light"] .form-feedback.error{color:#53647b}
+:root[data-theme="light"] .form-feedback.success{color:#53647b}
+:root[data-theme="light"] .footer-top>p{color:#53647b}
+:root[data-theme="light"] .footer-top nav{color:#53647b}
+:root[data-theme="light"] .footer-bottom{color:#53647b}
+:root[data-theme="light"] .footer-domain{color:#53647b}
+:root[data-theme="light"] .dialog-intro{color:#53647b}
+:root[data-theme="light"] .dialog-module>p{color:#53647b}
+:root[data-theme="light"] .dialog-cta p{color:#53647b}
+:root[data-theme="light"] .privacy-dialog p{color:#53647b}
+
+:root[data-theme="light"] .button-gold,:root[data-theme="light"] .button-white{color:#15243b}
+:root[data-theme="light"] .about,:root[data-theme="light"] .form-card,:root[data-theme="light"] .dropdown-panel,:root[data-theme="light"] .dialog-top{background:#e4ebf6}
+:root[data-theme="light"] .form-field input,:root[data-theme="light"] .form-field select,:root[data-theme="light"] .form-context textarea,:root[data-theme="light"] .select-wrap option{background:#f7f9fd;color:#243651}
+:root[data-theme="light"] .main-navigation{color:#53647b}
+:root[data-theme="light"] .method-detail{background:#dce5f3}
+:root[data-theme="light"] .brain-art-heading,:root[data-theme="light"] .brain-art-caption strong{color:#d8e4ff}
+:root[data-theme="light"] .brain-art-heading small,:root[data-theme="light"] .brain-art-caption>span{color:#a9b9d4}
+.second-brain-hero{border:1px solid #8195c42a;border-radius:24px;padding:20px;background:radial-gradient(ellipse at center,#243565,#0b162a 72%)}
+:root[data-theme="light"] .neural-hero-image{filter:drop-shadow(0 0 22px #788aff44)}
+:root[data-theme="dark"] .section-light{background:#101c2e;color:#e0e9fa}
+:root[data-theme="dark"] .section-light h2 em{color:#d7b878}
+:root[data-theme="dark"] .section-light :is(p,small,.product-tab,.governance-signature strong,.governance-item[open] summary,.text-link){color:#a9b9d4}
+@media(max-width:759px){:root[data-theme="light"] .main-navigation{background:#f6f8fc}.neural-hero-areas{margin-top:-10px}.second-brain-hero{padding:15px}}
+.second-brain-hero{height:auto;min-height:0;align-self:center;padding:24px 20px 28px}
+.second-brain-hero .brain-art-heading{margin-top:0}
+.second-brain-hero .neural-hero-image{width:100%;margin:0;max-width:100%}
+.second-brain-hero .brain-art-caption{margin-top:0;min-height:0}
+
+
+.brain-interaction{display:block;position:relative;width:100%;aspect-ratio:640/530;border:0;padding:0;background:radial-gradient(ellipse at center,#5b58ba25,transparent 65%);color:inherit;cursor:grab;touch-action:pan-y;user-select:none;border-radius:18px}
+.brain-interaction.is-dragging{cursor:grabbing}
+.brain-interaction canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0;pointer-events:none}
+.brain-interaction.is-interactive canvas{opacity:1}
+.brain-interaction.is-interactive img{visibility:hidden}
+.brain-interaction:focus-visible{outline:2px solid #9aafff;outline-offset:3px}
+.brain-interaction-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;margin:4px 0 16px;color:#b3c4e4;font-size:10px;position:relative;z-index:2}
+.hero-manifesto{display:flex;align-items:center;gap:8px;margin-top:30px;color:#9eafc8;font-size:9px;letter-spacing:1.4px}.hero-manifesto strong{color:#e8d5a6;font-weight:650}.hero-manifesto .gold-dot{position:static;display:block;flex:0 0 5px}
+.hero-grid{padding-top:24px;padding-bottom:24px}
+.hero-art.second-brain-hero{height:536px;display:flex;flex-direction:column;overflow:hidden}.hero-art.second-brain-hero .brain-interaction{flex:1;min-height:0;aspect-ratio:auto}.hero-art.second-brain-hero .brain-art-heading{flex:0 0 auto}.hero-art.second-brain-hero .brain-interaction-tools{flex:0 0 auto;margin-block:2px 8px}.hero-art.second-brain-hero .neural-hero-areas{flex:0 0 auto;margin-bottom:8px}.hero-art.second-brain-hero .brain-art-caption{flex:0 0 auto}.hero-art.second-brain-hero .brain-art-caption strong{font-size:23px}.hero-art.second-brain-hero .brain-art-caption>span{margin-top:5px}
+@media (min-width:760px) and (max-height:850px){.hero-grid{min-height:0;padding-block:14px;align-items:start}.hero h1{font-size:clamp(52px,4.35vw,64px);line-height:1}.hero-eyebrow{margin-bottom:16px}.hero-description{font-size:14px;line-height:1.55;margin-top:16px}.hero-actions{margin-top:18px}.hero-assurance{margin-top:16px}.hero-manifesto{margin-top:16px}.hero-art.second-brain-hero{height:570px}.hero-bottom{height:52px;min-height:52px;display:flex;justify-content:space-between;gap:24px;padding:6px 0}.hero-bottom .ecosystem-product{padding-left:0;border-left:0}.hero-bottom .ecosystem-mark.guardiao-mark{width:42px;height:42px}.hero-bottom .ecosystem-product>span{font-size:9px;line-height:1.35}.hero-bottom .scroll-cue{margin-left:auto}}
+.brain-reset{border:1px solid #8195c455;border-radius:8px;padding:9px 11px;min-height:36px;background:#172641;color:#d8e4ff;white-space:nowrap}
+.second-brain-hero .neural-hero-areas{margin:0 0 18px}
+@media(max-width:759px){.brain-interaction-tools{font-size:9px}.brain-interaction{touch-action:pan-y}}
+
+/* The neural panel follows the selected theme, including its controls. */
+.brain-art-heading img{width:78px;height:78px;object-fit:contain}
+:root[data-theme="light"] .second-brain-hero{background:radial-gradient(ellipse at center,#dce5fb,#f8faff 75%);border-color:#cdd8ef}
+:root[data-theme="light"] .brain-interaction{background:radial-gradient(ellipse at center,#9eaeea22,transparent 65%)}
+:root[data-theme="light"] .brain-art-heading,:root[data-theme="light"] .brain-art-caption strong{color:#243651}
+:root[data-theme="light"] .brain-art-heading small,:root[data-theme="light"] .brain-art-caption>span,:root[data-theme="light"] .brain-interaction-tools{color:#53647b}
+:root[data-theme="light"] .brain-reset,:root[data-theme="light"] .neural-hero-areas span{background:#edf2fc;color:#354976;border-color:#c7d3ec}
+:root[data-theme="light"] .neural-hero-image{filter:saturate(1.5) brightness(.65)}
+:root[data-theme="light"] .brain-interaction:focus-visible{outline-color:#475dcc}
+
+/* Use the monitor's available height for the brain and keep the context strip at the fold. */
+/* Decision layer surfaces follow the neural palette in both themes. */
+.product-visual {
+  --decision-surface:#101c32;
+  --decision-card:#182740;
+  --decision-line:#334565;
+  --decision-accent:#acbdff;
+  background:var(--decision-surface);
+  border-color:var(--decision-line);
+  box-shadow:0 12px 30px #030b181a;
+}
+:root[data-theme="light"] .product-visual {
+  --decision-surface:#f8faff;
+  --decision-card:#edf2fc;
+  --decision-line:#cbd7ec;
+  --decision-accent:#435ab6;
+}
+.product-visual .decision-core {
+  background:var(--decision-card);
+  border-color:var(--decision-line);
+  box-shadow:none;
+}
+.product-visual .decision-sources>span,
+.product-visual .decision-outcomes>span {
+  background:var(--decision-card);
+  border-color:var(--decision-line);
+}
+.product-visual .visual-header,
+.product-visual .module-explorer { border-color:var(--decision-line); }
+.product-visual .decision-connector { background:var(--decision-line); }
+.product-visual .module-buttons button { border-color:var(--decision-line); }
+.product-visual .module-buttons button.active,
+.product-visual .module-buttons button:hover {
+  background:var(--decision-card);
+  border-color:var(--decision-accent);
+  color:var(--decision-accent);
+}
+.product-visual .core-pulse,
+.product-visual .tiny-dot { background:var(--decision-accent); }
+.product-visual .decision-sources .icon,
+.product-visual .visual-header>.icon,
+.product-visual .module-description .icon { color:var(--decision-accent); }
+@media (min-width:980px) {
+  .hero { min-height:calc(100svh - 86px); display:flex; flex-direction:column; }
+  .hero-grid { flex:1; min-height:0; padding-block:14px; align-items:start; }
+  .hero-art.second-brain-hero { height:max(500px, calc(100svh - 178px)); align-self:start; }
+  .hero-bottom { display:flex; align-items:center; justify-content:space-between; flex-shrink:0; height:64px; min-height:64px; padding:8px 0; gap:24px; }
+  .hero-bottom .ecosystem-product { border-left:0; padding-left:0; }
+  .hero-bottom .ecosystem-mark.guardiao-mark { width:44px; height:44px; }
+  .hero-bottom .ecosystem-product>span { font-size:11px; line-height:1.4; }
+  .hero-bottom .scroll-cue { margin-left:auto; }
+}
+@media (min-width:1600px) {
+  .hero>.container { width:min(1600px, calc(100% - 96px)); }
+  .hero-grid { grid-template-columns:.9fr 1.1fr; gap:48px; }
+}
+
+/* Blue body text and surfaces, with gold title accents, labels and primary buttons. */
+:root[data-theme="light"] {
+  --gold:#8b672c;
+  --gold-bright:#8b672c;
+  --gold-dark:#8b672c;
+  --paper:#f6f8fc;
+  --paper-dark:#e7edf7;
+}
+:root[data-theme="light"] :is(.hero h1,h2,h3) { color:#243651; }
+:root[data-theme="light"] .hero h1 em,
+:root[data-theme="light"] h2 em,
+:root[data-theme="light"] .section-light h2 em,
+:root[data-theme="light"] .product-copy h3 em,
+:root[data-theme="light"] .about-quote span,
+:root[data-theme="light"] .brain-art-caption strong { color:#8b672c; }
+:root[data-theme="light"] .button-gold {
+  background:linear-gradient(112deg,#e5c997,#d3af6c);
+  color:#15243b;
+  box-shadow:0 5px 16px #8b672c18;
+}
+:root[data-theme="light"] .button-gold:hover {
+  background:linear-gradient(112deg,#f0dbb6,#dfbf83);
+  box-shadow:0 8px 25px #8b672c24;
+}
+:root[data-theme="light"] :is(.hero-manifesto,.footer-domain) { color:#53647b; }
+:root[data-theme="light"] :is(.hero-manifesto strong,.section-light .eyebrow,.principle-tag,.solution-footer>.icon,.governance-signature>.icon) { color:#344b98; }
+:root[data-theme="light"] .principle-tag { background:#e7edfc; border-color:#cbd6ee; }
+:root[data-theme="light"] :is(.eyebrow,.section-light .eyebrow,.hero-manifesto strong,.principle-tag) { color:#806025; }
+:root[data-theme="light"] .principle-tag { background:#f5ecd9; border-color:#ddc797; }
+:root[data-theme="light"] .hero-manifesto .gold-dot { background:#a37b36; }
+:root[data-theme="light"] :is(.dropdown-panel,dialog) { border-color:#cbd6ee; }
+:root[data-theme="light"] .dropdown-panel a:hover { background:#dde6f9; }
+:root[data-theme="light"] .product-tab:not(.active):hover { background:#e7edf7; }
+:root[data-theme="light"] .form-feedback:not(.error):not(.success) { background:#e7edfc; border-color:#cbd6ee; color:#344b98; }
+:root[data-theme="light"] :is(.skip-link,.noscript-notice) { color:#fff; }
+:root[data-theme="light"] ::selection { background:#cbd6ff; color:#243651; }
